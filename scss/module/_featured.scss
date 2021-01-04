@@ -1,0 +1,46 @@
+.featured-section {
+    background-image: url(../images/featured-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 200px 0px;
+    @include respond(tab-port) {
+        padding: 0 0 50px;
+    }
+
+    .featured-images {
+        img {
+            width: 100%;
+        }
+    }
+
+    .featured-text {
+        padding-top: 70px;
+
+        h2 {
+            margin: 5px 0px 20px;
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
+            padding-top: 0px;
+            h2 {
+                font-size: 38px;
+            }
+        }
+        @include respond(phone-large) {
+            h2 {
+                font-size: 30px;
+                line-height: 44px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .featured-btn {
+        margin-top: 45px;
+    }
+
+}
