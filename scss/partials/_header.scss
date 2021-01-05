@@ -22,6 +22,11 @@
             &:focus {
                 outline: none;
             }
+            .navbar-toggler-icon {
+                i {
+                    font-size: 30px;
+                }
+            }
         }
     }
 
@@ -39,11 +44,13 @@
         width: 100%;
         box-shadow: 0px 0px 1px $heading-color;
         z-index: 999999;
+        background-color: inherit;
+        transition: .5s all ease-in-out;
     }
 }
 
 .navbar-collapse {
     &.show {
-        border-top: 1px solid $heading-color;
+        border-top: 1px solid $primary-color;
     }
 }

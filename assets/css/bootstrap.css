@@ -2601,7 +2601,7 @@ tbody.collapse.show {
   font-size: 17px;
   font-weight: 600;
   display: block;
-  padding: 60px 30px; }
+  padding: 30px; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {

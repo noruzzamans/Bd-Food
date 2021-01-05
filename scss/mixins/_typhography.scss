@@ -22,12 +22,12 @@
 }
 
 @mixin h3 {
-    font-family: $sub-heading-font-family;
+    font-family: $heading-font-family;
     font-size: $h3-font-size;
-    color: $sub-heading-color;
-    font-weight: 400;
+    color: $heading-color;
+    font-weight: 700;
     text-transform: capitalize;
-    line-height: 44px;
+    line-height: 74px;
     margin: 0;
 }
 

@@ -287,12 +287,12 @@ h2 {
   margin: 0; }
 
 h3 {
-  font-family: "Great Vibes";
+  font-family: "Gilroy";
   font-size: 35px;
-  color: #F54300;
-  font-weight: 400;
+  color: #130849;
+  font-weight: 700;
   text-transform: capitalize;
-  line-height: 44px;
+  line-height: 74px;
   margin: 0; }
 
 h4 {
@@ -386,6 +386,15 @@ p {
     color: #ffffff;
     background-color: #130849; }
 
+.sub-title {
+  font-family: "Great Vibes";
+  font-size: 35px;
+  color: #F54300;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 44px;
+  margin: 0; }
+
 /*
 0-340px:        Phone-small
 341-375px:      Iphone-x
@@ -411,6 +420,9 @@ p {
 .header-section .navbar .navbar-toggler:focus {
   outline: none; }
 
+.header-section .navbar .navbar-toggler .navbar-toggler-icon i {
+  font-size: 30px; }
+
 @media only screen and (max-width: 991px) {
   .header-section .header-btn {
     padding-top: 28px; } }
@@ -422,10 +434,12 @@ p {
   right: 0;
   width: 100%;
   box-shadow: 0px 0px 1px #130849;
-  z-index: 999999; }
+  z-index: 999999;
+  background-color: inherit;
+  transition: .5s all ease-in-out; }
 
 .navbar-collapse.show {
-  border-top: 1px solid #130849; }
+  border-top: 1px solid #7DD87D; }
 
 /*
 0-340px:        Phone-small
