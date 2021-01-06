@@ -1,0 +1,43 @@
+.product-menu-section {
+    .product-menu-info {
+        h2 {
+            margin: 5px 0 20px;
+        }
+
+        .product-menu-btn {
+            margin-top: 45px;
+        }
+
+        .product-menu-images {
+            img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .product-menu-nav {
+        margin-bottom: 180px;
+
+        .isotop_button_wrapper {
+            button {
+                padding: 10px 35px;
+                border-radius: 30px;
+                background: transparent;
+                border: none;
+                &:focus {
+                    border: none;
+                    box-shadow: none !important;
+                    outline: none;
+                    color: $primary-color;
+                    background-color: #EFFFED;
+                }
+
+                &.active {
+                    color: $primary-color;
+                    background-color: #EFFFED;
+                }
+            }
+        }
+    }
+}

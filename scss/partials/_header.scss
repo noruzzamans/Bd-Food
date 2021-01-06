@@ -2,6 +2,8 @@
 @import "mixins/media-queries";
 
 .header-section {
+    transition: 1s;
+
     .navbar {
         @include respond(tab-port) {
             padding: 10px 15px;
@@ -9,6 +11,10 @@
 
         .navbar-nav {
             .nav-link {
+                &:hover {
+                    color: $primary-color;
+                }
+
                 &.active {
                     color: $primary-color;
                 }
@@ -18,10 +24,12 @@
                 }
             }
         }
+
         .navbar-toggler {
             &:focus {
                 outline: none;
             }
+
             .navbar-toggler-icon {
                 i {
                     font-size: 30px;
@@ -45,7 +53,6 @@
         box-shadow: 0px 0px 1px $heading-color;
         z-index: 999999;
         background-color: inherit;
-        transition: .5s all ease-in-out;
     }
 }
 

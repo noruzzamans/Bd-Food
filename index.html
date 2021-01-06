@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="assets/css/font-awesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css">
 
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+    <!-- Bootstrap DateRange Picker CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -96,22 +102,25 @@
 
         <!-- Start featured section -->
         <section class="featured-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="featured-images">
-                            <img class="bounce-animate" src="assets/images/featured-image.png" alt="featured images">
+            <div class="featured-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="featured-images">
+                                <img class="bounce-animate" src="assets/images/featured-image.png"
+                                    alt="featured images">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="featured-text">
-                            <h3 class="sub-title">About Us</h3>
-                            <h2>Bdfood Restaurant</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation </p>
-                            <div class="featured-btn">
-                                <a href="#" class="btn btn-primary">Book Table</a>
+                        <div class="col-lg-6 col-12">
+                            <div class="featured-text">
+                                <h3 class="sub-title">About Us</h3>
+                                <h2>Bdfood Restaurant</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation </p>
+                                <div class="featured-btn">
+                                    <a href="#" class="btn btn-primary">Book Table</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,6 +128,404 @@
             </div>
         </section>
         <!-- End featured section -->
+
+        <!-- Start featured section -->
+        <section class="product-menu-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="product-menu-info">
+                            <h3 class="sub-title">Restaurant</h3>
+                            <h2>Menu</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation </p>
+                            <div class="product-menu-btn">
+                                <a href="#" class="btn btn-primary">See Full Menu</a>
+                            </div>
+                            <div class="product-menu-images">
+                                <img class="bounce-animate" src="assets/images/home-menu-images.png" alt="Menu Images">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product menu -->
+                    <div class="col-lg-6 col-12">
+                        <div class="row justify-content-md-center">
+                            <div class="product-menu-nav">
+                                <div class="isotop_button_wrapper">
+                                    <!-- <button class="btn active" type="button" data-filter="*">ALL</button> -->
+                                    <button class="btn active" type="button" data-filter=".salads">Salads</button>
+                                    <button class="btn" type="button" data-filter=".soups">Soups</button>
+                                    <button class="btn" type="button" data-filter=".drinks">Drinks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product menu items -->
+                        <div class="row product-menu-isotop">
+                            <div class="col-lg-6 col-md-6 col-12 salads">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-1.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <a href="#">
+                                                    <div class="card-cart-icon">
+                                                        <img src="assets/images/shopping-cart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="card-heart-icon">
+                                                        <img src="assets/images/heart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 soups">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-1.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <a href="#">
+                                                    <div class="card-cart-icon">
+                                                        <img src="assets/images/shopping-cart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="card-heart-icon">
+                                                        <img src="assets/images/heart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 drinks">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-1.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <a href="#">
+                                                    <div class="card-cart-icon">
+                                                        <img src="assets/images/shopping-cart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="card-heart-icon">
+                                                        <img src="assets/images/heart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 salads">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-1.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <a href="#">
+                                                    <div class="card-cart-icon">
+                                                        <img src="assets/images/shopping-cart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="card-heart-icon">
+                                                        <img src="assets/images/heart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 drinks">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-1.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <a href="#">
+                                                    <div class="card-cart-icon">
+                                                        <img src="assets/images/shopping-cart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="card-heart-icon">
+                                                        <img src="assets/images/heart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 soups">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-2.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 drinks">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-3.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 salads">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-4.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 soups">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-2.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 salads">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-1.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <a href="#">
+                                                    <div class="card-cart-icon">
+                                                        <img src="assets/images/shopping-cart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="card-heart-icon">
+                                                        <img src="assets/images/heart.svg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 soups">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-2.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 drinks">
+                                <div class="menu-item-wrapper">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/food-dish-3.png" alt="food-dish">
+                                            <div class="card-price">
+                                                <span>$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corn-Shrimp</h5>
+                                            <p class="card-text">Vegetables salad</p>
+                                            <div class="card-icon">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End featured section -->
+
+        <!-- Start booking section -->
+        <div class="booking-form-section">
+            <div class="container">
+                <div class="booking-form-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-12">
+                            <div class="booking-person-wrapper">
+                                <img src="assets/images/customer-icon.svg" alt="customer-icon">
+                                <div class="booking-person-wrapper-select-nav">
+                                    <div class="form-group">
+                                        <select class="select-person">
+                                            <option>1 Person</option>
+                                            <option>1 Person</option>
+                                            <option>1 Person</option>
+                                            <option>1 Person</option>
+                                            <option>1 Person</option>
+                                            <option>1 Person</option>
+                                            <option>1 Person</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="booking-date-wrapper">
+                                <img src="assets/images/calendar.svg" alt="Calendar">
+                                <div class="booking-input-wrapper">
+                                    <div class="form-group">
+                                        <input type="text" class="booking-form-pickup-date" placeholder=" ">
+                                        <img src="assets/images/angle-down.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12"></div>
+                        <div class="col-lg-3 col-12">
+                            <div class="booking-btn-wrapper">
+                                <a href="#" class="btn btn-primary">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End booking section -->
 
     </main>
 
@@ -128,6 +535,19 @@
 
     <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Isotope js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- Select2 js -->
+    <script src="assets/js/select2.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- Bootstrap DateRange Picker js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>

@@ -1,0 +1,11 @@
+@mixin form-control {
+    padding: 25px 15px;
+    border: 0.5px solid;
+    border-radius: 10px;
+    font-size: 15px;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}

@@ -5,7 +5,8 @@ $body-font-family: "Muli";
 
 //Color
 $primary-color: #7DD87D;
-$heading-color: #130849;
+$secondary-color:#130849;
+$heading-color: $secondary-color;
 $sub-heading-color: #F54300;
 $body-font-color: #999FB9;
 $body-background-color: #ffffff;
@@ -21,4 +22,4 @@ $body-text-font-size: 17px;
 
 //Button color
 $btn-primary-color: $primary-color;
-$btn-secondary-color: $heading-color;
+$btn-secondary-color: $secondary-color;

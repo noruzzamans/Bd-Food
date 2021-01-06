@@ -1,0 +1,50 @@
+.booking-form-section {
+    margin: 200px 0;
+
+    .booking-form-wrapper {
+        padding: 30px 50px;
+        border-radius: 60px;
+        box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05);
+
+        .booking-person-wrapper {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 20px;
+            }
+            .booking-person-wrapper-select-nav {
+                width: 100%;
+            }
+        }
+
+        .booking-date-wrapper {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 20px;
+            }
+
+            .booking-input-wrapper {
+                .form-group {
+                    display: flex;
+                    align-items: center;
+                    input {
+                        padding: 7px 15px;
+                        border-radius: 20px;
+                        border: 0.5px solid #cccfdc;
+                        opacity: 0.5;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    img {
+                        margin-left: -30px;
+                    }
+                }
+            }
+        }
+
+    }
+}
