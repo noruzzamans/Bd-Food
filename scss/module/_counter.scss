@@ -1,0 +1,34 @@
+.single-counter-wrapper {
+    @include respond(phone-large) {
+        margin-bottom: 30px;
+    }
+    .counter-cooks-number {
+        background-image: url(../images/counter1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .counter-food-number {
+        background-image: url(../images/counter2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .counter-beverages-number {
+        background-image: url(../images/counter3.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .counter-award-number {
+        background-image: url(../images/counter4.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    h4 {
+        font-weight: 500;
+        color: $body-font-color;
+        line-height: 32px;
+    }
+}

@@ -269,7 +269,7 @@ body {
   overflow-x: hidden; }
 
 h1 {
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 70px;
   color: #130849;
   font-weight: 700;
@@ -278,7 +278,7 @@ h1 {
   margin-bottom: 0; }
 
 h2 {
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 48px;
   color: #130849;
   font-weight: 700;
@@ -287,7 +287,7 @@ h2 {
   margin: 0; }
 
 h3 {
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 35px;
   color: #130849;
   font-weight: 700;
@@ -296,7 +296,7 @@ h3 {
   margin: 0; }
 
 h4 {
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 24px;
   color: #130849;
   font-weight: 700;
@@ -305,7 +305,7 @@ h4 {
   margin: 0; }
 
 h5 {
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 20px;
   color: #130849;
   font-weight: 700;
@@ -314,7 +314,7 @@ h5 {
   margin: 0; }
 
 h6 {
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 17px;
   color: #130849;
   font-weight: 700;
@@ -434,26 +434,47 @@ p {
   @media only screen and (max-width: 991px) {
     .featured-section {
       padding: 0 0 50px; } }
-  .featured-section .featured-wrapper .featured-images img {
-    width: 100%; }
-  .featured-section .featured-wrapper .featured-text {
-    padding-top: 70px; }
-    .featured-section .featured-wrapper .featured-text h2 {
-      margin: 5px 0px 20px; }
-    @media only screen and (max-width: 991px) {
-      .featured-section .featured-wrapper .featured-text {
-        text-align: center;
-        padding-top: 0px; }
-        .featured-section .featured-wrapper .featured-text h2 {
-          font-size: 38px; } }
-    @media only screen and (max-width: 767px) {
-      .featured-section .featured-wrapper .featured-text h2 {
-        font-size: 30px;
-        line-height: 44px; }
-      .featured-section .featured-wrapper .featured-text h3 {
-        font-size: 30px; } }
-  .featured-section .featured-wrapper .featured-btn {
-    margin-top: 45px; }
+
+.booking-form-section {
+  padding: 200px 0; }
+  @media only screen and (max-width: 991px) {
+    .booking-form-section {
+      padding: 100px 0; } }
+  @media only screen and (max-width: 767px) {
+    .booking-form-section {
+      padding: 50px 0; } }
+
+.counter-section {
+  margin-bottom: 200px; }
+  @media only screen and (max-width: 991px) {
+    .counter-section {
+      margin-bottom: 100px; } }
+  @media only screen and (max-width: 767px) {
+    .counter-section {
+      margin-bottom: 50px; } }
+
+.featured-wrapper .featured-images img {
+  width: 100%; }
+
+.featured-wrapper .featured-text {
+  padding-top: 70px; }
+  .featured-wrapper .featured-text h2 {
+    margin: 5px 0px 20px; }
+  @media only screen and (max-width: 991px) {
+    .featured-wrapper .featured-text {
+      text-align: center;
+      padding-top: 0px; }
+      .featured-wrapper .featured-text h2 {
+        font-size: 38px; } }
+  @media only screen and (max-width: 767px) {
+    .featured-wrapper .featured-text h2 {
+      font-size: 30px;
+      line-height: 44px; }
+    .featured-wrapper .featured-text h3 {
+      font-size: 30px; } }
+
+.featured-wrapper .featured-btn {
+  margin-top: 45px; }
 
 /* bounce-animate */
 .bounce-animate {
@@ -517,7 +538,7 @@ p {
   border-radius: 30px;
   border: none;
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 17px;
   line-height: 22px;
   font-weight: 700;
@@ -545,7 +566,7 @@ p {
   border-radius: 30px;
   border: none;
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "Muli";
   font-size: 17px;
   line-height: 22px;
   font-weight: 700;
@@ -615,36 +636,77 @@ p {
         border-radius: 50%;
         text-align: center; }
 
-.booking-form-section {
-  margin: 200px 0; }
-  .booking-form-section .booking-form-wrapper {
-    padding: 30px 50px;
-    border-radius: 60px;
-    box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05); }
-    .booking-form-section .booking-form-wrapper .booking-person-wrapper {
-      display: flex;
-      align-items: center; }
-      .booking-form-section .booking-form-wrapper .booking-person-wrapper img {
-        margin-right: 20px; }
-      .booking-form-section .booking-form-wrapper .booking-person-wrapper .booking-person-wrapper-select-nav {
-        width: 100%; }
-    .booking-form-section .booking-form-wrapper .booking-date-wrapper {
-      display: flex;
-      align-items: center; }
-      .booking-form-section .booking-form-wrapper .booking-date-wrapper img {
-        margin-right: 20px; }
-      .booking-form-section .booking-form-wrapper .booking-date-wrapper .booking-input-wrapper .form-group {
-        display: flex;
-        align-items: center; }
-        .booking-form-section .booking-form-wrapper .booking-date-wrapper .booking-input-wrapper .form-group input {
-          padding: 7px 15px;
-          border-radius: 20px;
-          border: 0.5px solid #cccfdc;
-          opacity: 0.5; }
-          .booking-form-section .booking-form-wrapper .booking-date-wrapper .booking-input-wrapper .form-group input:focus {
-            outline: none; }
-        .booking-form-section .booking-form-wrapper .booking-date-wrapper .booking-input-wrapper .form-group img {
-          margin-left: -30px; }
+.booking-form-wrapper {
+  padding: 30px 50px;
+  border-radius: 60px;
+  box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05); }
+  @media only screen and (max-width: 991px) {
+    .booking-form-wrapper {
+      padding: 30px; } }
+  @media only screen and (max-width: 991px) {
+    .booking-form-wrapper .booking-btn-wrapper {
+      width: 100%; }
+      .booking-form-wrapper .booking-btn-wrapper .btn-primary {
+        width: 100%; } }
+
+.booking-person-wrapper {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 991px) {
+    .booking-person-wrapper {
+      margin-bottom: 30px; } }
+  .booking-person-wrapper img {
+    margin-right: 20px; }
+    .booking-person-wrapper img:last-child {
+      margin-right: 15px; }
+  .booking-person-wrapper .booking-person-wrapper-select-nav {
+    width: 100%; }
+    .booking-person-wrapper .booking-person-wrapper-select-nav .form-group {
+      position: relative; }
+      .booking-person-wrapper .booking-person-wrapper-select-nav .form-group .booking-person-wrapper-icon {
+        position: absolute;
+        top: calc(0% - -7px);
+        right: 0; }
+
+.booking-date-wrapper {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 991px) {
+    .booking-date-wrapper {
+      margin-bottom: 30px; } }
+  .booking-date-wrapper img {
+    margin-right: 20px; }
+  .booking-date-wrapper .booking-input-date-wrapper {
+    width: 100%; }
+    .booking-date-wrapper .booking-input-date-wrapper .form-group input {
+      padding: 7px 15px;
+      border-radius: 20px;
+      border: 0.5px solid #cccfdc;
+      color: #999FB9;
+      display: block;
+      width: 100%; }
+      .booking-date-wrapper .booking-input-date-wrapper .form-group input:focus {
+        outline: none; }
+
+.booking-time-wrapper {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .booking-time-wrapper {
+      margin-bottom: 30px; } }
+  .booking-time-wrapper img {
+    margin-right: 20px; }
+  .booking-time-wrapper .booking-input-time-wrapper {
+    width: 100%; }
+    .booking-time-wrapper .booking-input-time-wrapper .form-group input {
+      padding: 7px 15px;
+      border-radius: 20px;
+      border: 0.5px solid #cccfdc;
+      color: #999FB9;
+      display: block;
+      width: 100%; }
+      .booking-time-wrapper .booking-input-time-wrapper .form-group input:focus {
+        outline: none; }
 
 .select2-container--default {
   width: 100% !important; }
@@ -655,19 +717,74 @@ p {
   .select2-container--default .select2-selection--single {
     background-color: #ffffff;
     border-radius: 20px !important;
-    color: red;
     border: 0.5px solid #cccfdc !important;
-    opacity: 0.5;
     padding-left: 15px;
     height: 45px;
     border: none; }
     .select2-container--default .select2-selection--single .select2-selection__rendered {
       color: #999FB9;
-      line-height: 45px; }
+      line-height: 42px;
+      padding: 0; }
     .select2-container--default .select2-selection--single .select2-selection__arrow {
       display: none; }
     .select2-container--default .select2-selection--single:focus {
       outline: none; }
+  .select2-container--default .select2-dropdown {
+    border: 0.5px solid #cccfdc !important;
+    background-color: #ffffff; }
+  .select2-container--default .select2-search--dropdown {
+    background-color: #ffffff;
+    padding: 0; }
+    .select2-container--default .select2-search--dropdown .select2-search__field {
+      background-color: #ffffff;
+      border: none;
+      padding: 5px; }
+      .select2-container--default .select2-search--dropdown .select2-search__field:focus {
+        outline: none; }
+  .select2-container--default .select2-results {
+    background-color: #ffffff;
+    border-radius: none;
+    border-top: 0.5px solid #cccfdc !important; }
+  .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #ffffff;
+    color: #130849; }
+  .select2-container--default .select2-results__option--selected {
+    background-color: #ffffff; }
+  .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #130849 transparent; }
+
+@media only screen and (max-width: 767px) {
+  .single-counter-wrapper {
+    margin-bottom: 30px; } }
+
+.single-counter-wrapper .counter-cooks-number {
+  background-image: url(../images/counter1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.single-counter-wrapper .counter-food-number {
+  background-image: url(../images/counter2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.single-counter-wrapper .counter-beverages-number {
+  background-image: url(../images/counter3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.single-counter-wrapper .counter-award-number {
+  background-image: url(../images/counter4.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.single-counter-wrapper h4 {
+  font-weight: 500;
+  color: #999FB9;
+  line-height: 32px; }
 
 .form-control {
   padding: 25px 15px;

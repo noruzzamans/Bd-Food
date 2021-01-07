@@ -1,0 +1,30 @@
+.booking-time-wrapper {
+    display: flex;
+    align-items: center;
+
+    @include respond(phone-large) {
+        margin-bottom: 30px;
+    }
+
+    img {
+        margin-right: 20px;
+    }
+
+    .booking-input-time-wrapper {
+        width: 100%;
+        .form-group {
+            input {
+                padding: 7px 15px;
+                border-radius: 20px;
+                border: 0.5px solid #cccfdc;
+                color: $body-font-color;
+                display: block;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

@@ -129,7 +129,7 @@
         </section>
         <!-- End featured section -->
 
-        <!-- Start featured section -->
+        <!-- Start product section -->
         <section class="product-menu-section">
             <div class="container">
                 <div class="row">
@@ -479,46 +479,59 @@
                 </div>
             </div>
         </section>
-        <!-- End featured section -->
+        <!-- End product section -->
 
         <!-- Start booking section -->
         <div class="booking-form-section">
             <div class="container">
-                <div class="booking-form-wrapper">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-12">
-                            <div class="booking-person-wrapper">
-                                <img src="assets/images/customer-icon.svg" alt="customer-icon">
-                                <div class="booking-person-wrapper-select-nav">
-                                    <div class="form-group">
-                                        <select class="select-person">
-                                            <option>1 Person</option>
-                                            <option>1 Person</option>
-                                            <option>1 Person</option>
-                                            <option>1 Person</option>
-                                            <option>1 Person</option>
-                                            <option>1 Person</option>
-                                            <option>1 Person</option>
-                                        </select>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="booking-form-wrapper">
+                            <div class="row align-items-center">
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="booking-person-wrapper">
+                                        <img src="assets/images/customer-icon.svg" alt="customer-icon">
+                                        <div class="booking-person-wrapper-select-nav">
+                                            <div class="form-group">
+                                                <select class="select-person">
+                                                    <option>1 Person</option>
+                                                    <option>2 Person</option>
+                                                    <option>3 Person</option>
+                                                    <option>4 Person</option>
+                                                </select>
+                                                <div class="booking-person-wrapper-icon">
+                                                    <img src="assets/images/angle-down.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-12">
-                            <div class="booking-date-wrapper">
-                                <img src="assets/images/calendar.svg" alt="Calendar">
-                                <div class="booking-input-wrapper">
-                                    <div class="form-group">
-                                        <input type="text" class="booking-form-pickup-date" placeholder=" ">
-                                        <img src="assets/images/angle-down.svg" alt="">
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="booking-date-wrapper">
+                                        <img src="assets/images/wall-clock.svg" alt="Calendar">
+                                        <div class="booking-input-date-wrapper">
+                                            <div class="form-group">
+                                                <input type="text" class="booking-form-pickup-date" placeholder=" ">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-12"></div>
-                        <div class="col-lg-3 col-12">
-                            <div class="booking-btn-wrapper">
-                                <a href="#" class="btn btn-primary">Book Table</a>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="booking-time-wrapper">
+                                        <img src="assets/images/wall-clock.svg" alt="Calendar">
+                                        <div class="booking-input-time-wrapper">
+                                            <div class="form-group">
+                                                <input type="text" class="booking-form-pickup-time" placeholder=" ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="booking-btn-wrapper d-flex justify-content-end">
+                                        <a href="#" class="btn btn-primary">Book Table</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -526,6 +539,48 @@
             </div>
         </div>
         <!-- End booking section -->
+
+        <!-- Start Counter section -->
+        <section class="counter-section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-6 col-12">
+                        <div class="single-counter-wrapper">
+                            <div class="counter-cooks-number">
+                                <h2 class="counter">68</h2>
+                            </div>
+                            <h4>Cooks</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 col-12">
+                        <div class="single-counter-wrapper">
+                            <div class="counter-food-number">
+                                <h2 class="counter">350</h2>
+                            </div>
+                            <h4>Food items</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 col-12">
+                        <div class="single-counter-wrapper">
+                            <div class="counter-beverages-number">
+                                <h2 class="counter">204</h2>
+                            </div>
+                            <h4>Beverages</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 col-12">
+                        <div class="single-counter-wrapper">
+                            <div class="counter-award-number">
+                                <h2 class="counter">350</h2>
+                            </div>
+                            <h4>Award</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Counter section -->
 
     </main>
 
@@ -548,6 +603,9 @@
     <!-- Bootstrap DateRange Picker js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
+    <!-- countup js -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.countup.min.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>

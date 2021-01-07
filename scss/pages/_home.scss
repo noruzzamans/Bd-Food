@@ -1,0 +1,34 @@
+.featured-section {
+    background-image: url(../images/featured-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 200px 0px;
+
+    @include respond(tab-port) {
+        padding: 0 0 50px;
+    }
+}
+
+.booking-form-section {
+    padding: 200px 0;
+
+    @include respond(tab-port) {
+        padding: 100px 0;
+    }
+
+    @include respond(phone-large) {
+        padding: 50px 0;
+    }
+}
+
+.counter-section {
+    padding-bottom: 200px;
+
+    @include respond(tab-port) {
+        padding-bottom: 100px;
+    }
+
+    @include respond(phone-large) {
+        padding-bottom: 50px;
+    }
+}

@@ -35,21 +35,37 @@
 
         // In your Javascript (external .js resource or <script> tag)
         $('.select-person').select2();
-        
+
 
         var bookingFormPickUpDate = $('.booking-form-pickup-date');
+        var bookingFormPickUptime = $('.booking-form-pickup-time');
 
         // Initiate datetime picker for pickup date
         bookingFormPickUpDate.daterangepicker({
             startDate: moment(),
             minDate: moment(),
             singleDatePicker: true,
-            timePicker: true,
+            timePicker: false,
             showDropdowns: true,
             locale: {
                 format: 'DD/MM/YYYY'
             }
         });
+        // Initiate datetime picker for pickup date
+        bookingFormPickUptime.daterangepicker({
+            // startDate: moment(),
+            // minDate: moment(),
+            singleDatePicker: true,
+            pickDate: false,
+            timePicker: true,
+            showDropdowns: true,
+            locale: {
+                format: 'HH:mm:ss'
+            }
+        });
+
+        //counter up
+        $('.counter').countUp();
 
     })
 })(jQuery);
