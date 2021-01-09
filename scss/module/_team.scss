@@ -1,17 +1,4 @@
 .team-section {
-<<<<<<< HEAD
-=======
-    padding: 200px 0;
-
-    @include respond(tab-port) {
-        padding: 100px 0;
-    }
-
-    @include respond(phone-large) {
-        padding: 50px 0;
-    }
-
->>>>>>> 154b0983fcc2616eb96e3d0e2ecb60daeb191485
     .team-info {
         h2 {
             margin: 5px 0px 20px;
@@ -47,10 +34,6 @@
             @include respond(tab-port) {
                 margin-bottom: 30px;
             }
-<<<<<<< HEAD
-
-=======
->>>>>>> 154b0983fcc2616eb96e3d0e2ecb60daeb191485
             .card {
                 overflow: hidden;
 
@@ -61,32 +44,20 @@
                 }
 
                 img {
-<<<<<<< HEAD
-=======
-                    width: 100%;
->>>>>>> 154b0983fcc2616eb96e3d0e2ecb60daeb191485
                     position: relative;
                 }
 
                 .team-social-icon {
                     position: absolute;
-<<<<<<< HEAD
                     padding: 10px 14px;
                     right: 20px;
                     background: $body-background-color;
                     border-radius: 0px 0px 30px 30px;
-=======
-                    padding: 10px 17px;
-                    right: 20px;
-                    background: $body-background-color;
-                    border-radius: 0px 0px 22px 22px;
->>>>>>> 154b0983fcc2616eb96e3d0e2ecb60daeb191485
                     top: -9999px;
                     transition: all ease 1s;
                     z-index: 1;
 
                     li {
-<<<<<<< HEAD
                         margin-bottom: 17px;
                         text-align: center;
 
@@ -98,39 +69,6 @@
                             margin-bottom: 10px;
                         }
 
-                        a {
-                            img {}
-=======
-                        margin-bottom: 25px;
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-
-                        a {
-                            color: #fff;
-
-                            i {
-                                font-size: 20px;
-
-                                &.fa-facebook-f {
-                                    color: #4064AD;
-                                }
-
-                                &.fa-twitter {
-                                    color: #1C9DEB;
-                                }
-
-                                &.fa-pinterest-p {
-                                    color: #E00018;
-                                }
-
-                                &.fa-linkedin-in {
-                                    color: #0077B5;
-                                }
-                            }
->>>>>>> 154b0983fcc2616eb96e3d0e2ecb60daeb191485
-                        }
                     }
                 }
             }

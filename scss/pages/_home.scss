@@ -33,7 +33,6 @@
         padding-bottom: 50px;
     }
 }
-<<<<<<< HEAD
 
 .special-food-section {
     background-image: url(../images/special-food-bg.svg);
@@ -126,6 +125,14 @@
     background-position: center center;
     padding: 200px 0;
 
+    @include respond(tab-port) {
+        padding: 100px 0;
+    }
+
+    @include respond(phone-large) {
+        padding: 50px 0;
+    }
+
     .testimonial-info {
         h2 {
             margin: 5px 0px 70px;
@@ -153,8 +160,4 @@
             padding-bottom: 75px;
         }
     }
-=======
-.special-food-section {
-    
->>>>>>> 154b0983fcc2616eb96e3d0e2ecb60daeb191485
 }

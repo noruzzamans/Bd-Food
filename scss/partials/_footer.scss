@@ -1,0 +1,50 @@
+.footer-section {
+    .footer-widget-item {
+        @include respond(tab-port) {
+            margin-top: 50px;
+        }
+        @include respond(iphone-x) {
+            margin-top: 0;
+        }
+        .footer-logo {
+
+        }
+        .footer-logo-text {
+            padding: 25px 0px 50px;
+            font-size: 15px;
+            @include respond(iphone-x) {
+                padding: 20px 0;
+            }
+        }
+        .footer-social-item {
+            h4 {
+                font-size: 17px;
+                line-height: 22px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .footer-social {
+                a {
+                    img {
+                        padding-right: 25px;
+                    }
+                }
+            }
+        }
+        .footer-widget-title {
+
+        }
+        .footer-widget-address {
+            .footer-address-info {
+
+            }
+        }
+        .footer-nav {
+            ul {
+                li {
+                    
+                }
+            }
+        }
+    }
+}

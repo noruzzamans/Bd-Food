@@ -65,10 +65,12 @@
         });
 
         //testimonial carousel slider
-        $('.testimonial-carousel').owlCarousel({
+        $('.owl-carousel').owlCarousel({
             loop: true,
+            margin: 10,
             nav: false,
             dots: true,
+            items: 1,
             responsive: {
                 0: {
                     items: 1
