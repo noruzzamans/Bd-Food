@@ -1,0 +1,27 @@
+.special-food-info {
+    h2 {
+        margin: 5px 0px 20px;
+    }
+
+    @include respond(tab-port) {
+        text-align: center;
+
+        h2 {
+            font-size: 38px;
+        }
+    }
+
+    @include respond(phone-large) {
+        h2 {
+            font-size: 30px;
+            line-height: 44px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+    .special-food-btn {
+        margin-top: 45px;
+    }
+}

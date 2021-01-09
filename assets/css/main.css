@@ -430,6 +430,7 @@ p {
   background-image: url(../images/featured-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
   padding: 200px 0px; }
   @media only screen and (max-width: 991px) {
     .featured-section {
@@ -445,13 +446,79 @@ p {
       padding: 50px 0; } }
 
 .counter-section {
-  margin-bottom: 200px; }
+  padding-bottom: 200px; }
   @media only screen and (max-width: 991px) {
     .counter-section {
-      margin-bottom: 100px; } }
+      padding-bottom: 100px; } }
   @media only screen and (max-width: 767px) {
     .counter-section {
-      margin-bottom: 50px; } }
+      padding-bottom: 50px; } }
+
+.special-food-section {
+  background-image: url(../images/special-food-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding: 200px 0px; }
+  @media only screen and (max-width: 991px) {
+    .special-food-section {
+      padding: 100px 0; } }
+  @media only screen and (max-width: 767px) {
+    .special-food-section {
+      padding: 80px 0; } }
+
+.blog-section {
+  padding-top: 200px; }
+  @media only screen and (max-width: 991px) {
+    .blog-section {
+      padding-top: 100px; } }
+  @media only screen and (max-width: 767px) {
+    .blog-section {
+      padding-top: 50px; } }
+  .blog-section .blog-info h2 {
+    margin: 5px 0px 20px; }
+  @media only screen and (max-width: 991px) {
+    .blog-section .blog-info h2 {
+      font-size: 38px; } }
+  @media only screen and (max-width: 767px) {
+    .blog-section .blog-info h2 {
+      font-size: 30px;
+      line-height: 44px; }
+    .blog-section .blog-info h3 {
+      font-size: 30px; } }
+  .blog-section .blog-info P {
+    padding-bottom: 75px; }
+  @media only screen and (max-width: 991px) {
+    .blog-section .blog-wrapper .single-blog-item {
+      margin-bottom: 30px; } }
+  .blog-section .blog-wrapper .single-blog-item .card img {
+    border-radius: 15px 15px 0px 0px; }
+  .blog-section .blog-wrapper .single-blog-item .card .card-body {
+    padding: 25px 30px; }
+    .blog-section .blog-wrapper .single-blog-item .card .card-body a {
+      color: #7DD87D; }
+      .blog-section .blog-wrapper .single-blog-item .card .card-body a span {
+        margin-left: 10px; }
+
+.testimonial-section {
+  background-image: url(../images/testimonial-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding: 200px 0; }
+  .testimonial-section .testimonial-info h2 {
+    margin: 5px 0px 70px; }
+  @media only screen and (max-width: 991px) {
+    .testimonial-section .testimonial-info h2 {
+      font-size: 38px; } }
+  @media only screen and (max-width: 767px) {
+    .testimonial-section .testimonial-info h2 {
+      font-size: 30px;
+      line-height: 44px; }
+    .testimonial-section .testimonial-info h3 {
+      font-size: 30px; } }
+  .testimonial-section .testimonial-info P {
+    padding-bottom: 75px; }
 
 .featured-wrapper .featured-images img {
   width: 100%; }
@@ -507,7 +574,21 @@ p {
     transform: translateY(-20px); } }
 
 .product-menu-section .product-menu-info h2 {
-  margin: 5px 0 20px; }
+  margin: 5px 0px 20px; }
+
+@media only screen and (max-width: 991px) {
+  .product-menu-section .product-menu-info {
+    text-align: center;
+    padding-top: 0px; }
+    .product-menu-section .product-menu-info h2 {
+      font-size: 38px; } }
+
+@media only screen and (max-width: 767px) {
+  .product-menu-section .product-menu-info h2 {
+    font-size: 30px;
+    line-height: 44px; }
+  .product-menu-section .product-menu-info h3 {
+    font-size: 30px; } }
 
 .product-menu-section .product-menu-info .product-menu-btn {
   margin-top: 45px; }
@@ -590,19 +671,31 @@ p {
     background-color: #130849; }
 
 .card {
+  box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.13); }
+  .card .card-body h4 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 10px; }
+  .card .card-body p {
+    font-size: 15px;
+    font-weight: 300; }
+
+.product-card-wrapper .card {
   display: flex;
   align-items: center;
   margin-bottom: 125px;
-  box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.13); }
-  .card .card-img {
+  box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.13);
+  border-radius: 20px; }
+  .product-card-wrapper .card .card-img {
     margin-top: -85px;
     text-align: center;
     position: relative;
     display: inline-block;
     width: fit-content; }
-    .card .card-img img {
+    .product-card-wrapper .card .card-img img {
       filter: drop-shadow(0px 6px 16px rgba(19, 8, 73, 0.25)); }
-    .card .card-img .card-price {
+    .product-card-wrapper .card .card-img .card-price {
       background-color: #130849;
       color: #ffffff;
       border-radius: 5px 24px 24px 24px;
@@ -612,24 +705,23 @@ p {
       align-items: center;
       justify-content: center;
       position: absolute;
-      bottom: 0;
-      bottom: calc( -20% - -15px);
+      bottom: calc(-20% - -15px);
       right: 0; }
-  .card .card-body {
+  .product-card-wrapper .card .card-body {
     padding-top: 40px;
     width: 100%; }
-    .card .card-body h5 {
+    .product-card-wrapper .card .card-body h5 {
       font-size: 17px;
       line-height: 22px;
       font-weight: 600; }
-    .card .card-body p {
+    .product-card-wrapper .card .card-body p {
       font-size: 15px;
       margin: 10px 0px 20px; }
-    .card .card-body .card-icon {
+    .product-card-wrapper .card .card-body .card-icon {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      .card .card-body .card-icon .card-cart-icon, .card .card-body .card-icon .card-heart-icon {
+      .product-card-wrapper .card .card-body .card-icon .card-cart-icon, .product-card-wrapper .card .card-body .card-icon .card-heart-icon {
         width: 32px;
         height: 32px;
         background-color: #EFFFED;
@@ -785,6 +877,72 @@ p {
   font-weight: 500;
   color: #999FB9;
   line-height: 32px; }
+
+.special-food-info h2 {
+  margin: 5px 0px 20px; }
+
+@media only screen and (max-width: 991px) {
+  .special-food-info {
+    text-align: center; }
+    .special-food-info h2 {
+      font-size: 38px; } }
+
+@media only screen and (max-width: 767px) {
+  .special-food-info h2 {
+    font-size: 30px;
+    line-height: 44px; }
+  .special-food-info h3 {
+    font-size: 30px; } }
+
+.special-food-info .special-food-btn {
+  margin-top: 45px; }
+
+.team-section .team-info h2 {
+  margin: 5px 0px 20px; }
+
+@media only screen and (max-width: 991px) {
+  .team-section .team-info {
+    text-align: center;
+    padding-top: 0px; }
+    .team-section .team-info h2 {
+      font-size: 38px; } }
+
+@media only screen and (max-width: 767px) {
+  .team-section .team-info h2 {
+    font-size: 30px;
+    line-height: 44px; }
+  .team-section .team-info h3 {
+    font-size: 30px; } }
+
+.team-section .team-info P {
+  padding-bottom: 75px; }
+
+@media only screen and (max-width: 991px) {
+  .team-section .team-wrapper .single-team-item {
+    margin-bottom: 30px; } }
+
+.team-section .team-wrapper .single-team-item .card {
+  overflow: hidden; }
+  .team-section .team-wrapper .single-team-item .card:hover .team-social-icon {
+    top: 0; }
+  .team-section .team-wrapper .single-team-item .card img {
+    position: relative; }
+  .team-section .team-wrapper .single-team-item .card .team-social-icon {
+    position: absolute;
+    padding: 10px 14px;
+    right: 20px;
+    background: #ffffff;
+    border-radius: 0px 0px 30px 30px;
+    top: -9999px;
+    transition: all ease 1s;
+    z-index: 1; }
+    .team-section .team-wrapper .single-team-item .card .team-social-icon li {
+      margin-bottom: 17px;
+      text-align: center; }
+      .team-section .team-wrapper .single-team-item .card .team-social-icon li:first-child {
+        margin-top: 10px; }
+      .team-section .team-wrapper .single-team-item .card .team-social-icon li:last-child {
+        margin-bottom: 10px; }
 
 .form-control {
   padding: 25px 15px;
