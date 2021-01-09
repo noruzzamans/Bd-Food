@@ -445,13 +445,13 @@ p {
       padding: 50px 0; } }
 
 .counter-section {
-  margin-bottom: 200px; }
+  padding-bottom: 200px; }
   @media only screen and (max-width: 991px) {
     .counter-section {
-      margin-bottom: 100px; } }
+      padding-bottom: 100px; } }
   @media only screen and (max-width: 767px) {
     .counter-section {
-      margin-bottom: 50px; } }
+      padding-bottom: 50px; } }
 
 .featured-wrapper .featured-images img {
   width: 100%; }
@@ -507,7 +507,21 @@ p {
     transform: translateY(-20px); } }
 
 .product-menu-section .product-menu-info h2 {
-  margin: 5px 0 20px; }
+  margin: 5px 0px 20px; }
+
+@media only screen and (max-width: 991px) {
+  .product-menu-section .product-menu-info {
+    text-align: center;
+    padding-top: 0px; }
+    .product-menu-section .product-menu-info h2 {
+      font-size: 38px; } }
+
+@media only screen and (max-width: 767px) {
+  .product-menu-section .product-menu-info h2 {
+    font-size: 30px;
+    line-height: 44px; }
+  .product-menu-section .product-menu-info h3 {
+    font-size: 30px; } }
 
 .product-menu-section .product-menu-info .product-menu-btn {
   margin-top: 45px; }
@@ -590,19 +604,33 @@ p {
     background-color: #130849; }
 
 .card {
+  box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.13); }
+  .card img {
+    border-radius: 15px 15px 0px 0px; }
+  .card .card-body h4 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 10px; }
+  .card .card-body p {
+    font-size: 15px;
+    font-weight: 300; }
+
+.product-card-wrapper .card {
   display: flex;
   align-items: center;
   margin-bottom: 125px;
-  box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.13); }
-  .card .card-img {
+  box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.13);
+  border-radius: 20px; }
+  .product-card-wrapper .card .card-img {
     margin-top: -85px;
     text-align: center;
     position: relative;
     display: inline-block;
     width: fit-content; }
-    .card .card-img img {
+    .product-card-wrapper .card .card-img img {
       filter: drop-shadow(0px 6px 16px rgba(19, 8, 73, 0.25)); }
-    .card .card-img .card-price {
+    .product-card-wrapper .card .card-img .card-price {
       background-color: #130849;
       color: #ffffff;
       border-radius: 5px 24px 24px 24px;
@@ -612,24 +640,23 @@ p {
       align-items: center;
       justify-content: center;
       position: absolute;
-      bottom: 0;
-      bottom: calc( -20% - -15px);
+      bottom: calc(-20% - -15px);
       right: 0; }
-  .card .card-body {
+  .product-card-wrapper .card .card-body {
     padding-top: 40px;
     width: 100%; }
-    .card .card-body h5 {
+    .product-card-wrapper .card .card-body h5 {
       font-size: 17px;
       line-height: 22px;
       font-weight: 600; }
-    .card .card-body p {
+    .product-card-wrapper .card .card-body p {
       font-size: 15px;
       margin: 10px 0px 20px; }
-    .card .card-body .card-icon {
+    .product-card-wrapper .card .card-body .card-icon {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      .card .card-body .card-icon .card-cart-icon, .card .card-body .card-icon .card-heart-icon {
+      .product-card-wrapper .card .card-body .card-icon .card-cart-icon, .product-card-wrapper .card .card-body .card-icon .card-heart-icon {
         width: 32px;
         height: 32px;
         background-color: #EFFFED;
@@ -785,6 +812,86 @@ p {
   font-weight: 500;
   color: #999FB9;
   line-height: 32px; }
+
+.special-food-info h2 {
+  margin: 5px 0px 20px; }
+
+@media only screen and (max-width: 991px) {
+  .special-food-info {
+    text-align: center;
+    padding-top: 0px; }
+    .special-food-info h2 {
+      font-size: 38px; } }
+
+@media only screen and (max-width: 767px) {
+  .special-food-info h2 {
+    font-size: 30px;
+    line-height: 44px; }
+  .special-food-info h3 {
+    font-size: 30px; } }
+
+.special-food-info .special-food-btn {
+  margin-top: 45px; }
+
+.team-section {
+  padding: 200px 0; }
+  @media only screen and (max-width: 991px) {
+    .team-section {
+      padding: 100px 0; } }
+  @media only screen and (max-width: 767px) {
+    .team-section {
+      padding: 50px 0; } }
+  .team-section .team-info h2 {
+    margin: 5px 0px 20px; }
+  @media only screen and (max-width: 991px) {
+    .team-section .team-info {
+      text-align: center;
+      padding-top: 0px; }
+      .team-section .team-info h2 {
+        font-size: 38px; } }
+  @media only screen and (max-width: 767px) {
+    .team-section .team-info h2 {
+      font-size: 30px;
+      line-height: 44px; }
+    .team-section .team-info h3 {
+      font-size: 30px; } }
+  .team-section .team-info P {
+    padding-bottom: 75px; }
+  @media only screen and (max-width: 991px) {
+    .team-section .team-wrapper .single-team-item {
+      margin-bottom: 30px; } }
+  .team-section .team-wrapper .single-team-item .card {
+    overflow: hidden; }
+    .team-section .team-wrapper .single-team-item .card:hover .team-social-icon {
+      top: 0; }
+    .team-section .team-wrapper .single-team-item .card img {
+      width: 100%;
+      position: relative; }
+    .team-section .team-wrapper .single-team-item .card .team-social-icon {
+      position: absolute;
+      padding: 10px 17px;
+      right: 20px;
+      background: #ffffff;
+      border-radius: 0px 0px 22px 22px;
+      top: -9999px;
+      transition: all ease 1s;
+      z-index: 1; }
+      .team-section .team-wrapper .single-team-item .card .team-social-icon li {
+        margin-bottom: 25px; }
+        .team-section .team-wrapper .single-team-item .card .team-social-icon li:last-child {
+          margin-bottom: 0; }
+        .team-section .team-wrapper .single-team-item .card .team-social-icon li a {
+          color: #fff; }
+          .team-section .team-wrapper .single-team-item .card .team-social-icon li a i {
+            font-size: 20px; }
+            .team-section .team-wrapper .single-team-item .card .team-social-icon li a i.fa-facebook-f {
+              color: #4064AD; }
+            .team-section .team-wrapper .single-team-item .card .team-social-icon li a i.fa-twitter {
+              color: #1C9DEB; }
+            .team-section .team-wrapper .single-team-item .card .team-social-icon li a i.fa-pinterest-p {
+              color: #E00018; }
+            .team-section .team-wrapper .single-team-item .card .team-social-icon li a i.fa-linkedin-in {
+              color: #0077B5; }
 
 .form-control {
   padding: 25px 15px;

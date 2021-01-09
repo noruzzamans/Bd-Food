@@ -35,7 +35,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #007bff !default;
+$blue:    #7DD87D !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -659,7 +659,7 @@ $jumbotron-bg:                      $gray-200 !default;
 $card-spacer-y:                     0 !default;
 $card-spacer-x:                     30px !default;
 $card-border-width:                 none;
-$card-border-radius:                20px;
+$card-border-radius:                15px;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;

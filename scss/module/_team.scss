@@ -1,0 +1,106 @@
+.team-section {
+    padding: 200px 0;
+
+    @include respond(tab-port) {
+        padding: 100px 0;
+    }
+
+    @include respond(phone-large) {
+        padding: 50px 0;
+    }
+
+    .team-info {
+        h2 {
+            margin: 5px 0px 20px;
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
+            padding-top: 0px;
+
+            h2 {
+                font-size: 38px;
+            }
+        }
+
+        @include respond(phone-large) {
+            h2 {
+                font-size: 30px;
+                line-height: 44px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        P {
+            padding-bottom: 75px;
+        }
+    }
+
+    .team-wrapper {
+        .single-team-item {
+            @include respond(tab-port) {
+                margin-bottom: 30px;
+            }
+            .card {
+                overflow: hidden;
+
+                &:hover {
+                    .team-social-icon {
+                        top: 0;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    position: relative;
+                }
+
+                .team-social-icon {
+                    position: absolute;
+                    padding: 10px 17px;
+                    right: 20px;
+                    background: $body-background-color;
+                    border-radius: 0px 0px 22px 22px;
+                    top: -9999px;
+                    transition: all ease 1s;
+                    z-index: 1;
+
+                    li {
+                        margin-bottom: 25px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        a {
+                            color: #fff;
+
+                            i {
+                                font-size: 20px;
+
+                                &.fa-facebook-f {
+                                    color: #4064AD;
+                                }
+
+                                &.fa-twitter {
+                                    color: #1C9DEB;
+                                }
+
+                                &.fa-pinterest-p {
+                                    color: #E00018;
+                                }
+
+                                &.fa-linkedin-in {
+                                    color: #0077B5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
