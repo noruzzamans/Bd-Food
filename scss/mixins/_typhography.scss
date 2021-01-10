@@ -72,7 +72,7 @@
 }
 
 //Button
-@mixin btn-primary {
+@mixin btn {
     padding: 17px 32px;
     border-radius: 30px;
     border: none;
@@ -83,17 +83,4 @@
     font-weight: 700;
     display: inline-block;
     background-color: $primary-color !important;
-}
-
-@mixin btn-secondary {
-    padding: 17px 32px;
-    border-radius: 30px;
-    border: none;
-    color: $body-background-color;
-    font-family: $heading-font-family;
-    font-size: 17px;
-    line-height: 22px;
-    font-weight: 700;
-    display: inline-block;
-    background-color: $heading-color !important;
 }

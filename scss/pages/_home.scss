@@ -22,17 +22,7 @@
     }
 }
 
-.counter-section {
-    padding-bottom: 200px;
-
-    @include respond(tab-port) {
-        padding-bottom: 100px;
-    }
-
-    @include respond(phone-large) {
-        padding-bottom: 50px;
-    }
-}
+.counter-section {}
 
 .special-food-section {
     background-image: url(../images/special-food-bg.svg);
@@ -46,75 +36,19 @@
     }
 
     @include respond(phone-large) {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 }
 
-.blog-section {
-    padding-top: 200px;
+.newsletter-section {
+    padding: 200px 0;
 
     @include respond(tab-port) {
-        padding-top: 100px;
+        padding: 100px 0;
     }
 
     @include respond(phone-large) {
-        padding-top: 50px;
-    }
-
-    .blog-info {
-
-        h2 {
-            margin: 5px 0px 20px;
-        }
-
-        @include respond(tab-port) {
-            h2 {
-                font-size: 38px;
-            }
-        }
-
-        @include respond(phone-large) {
-
-            h2 {
-                font-size: 30px;
-                line-height: 44px;
-            }
-
-            h3 {
-                font-size: 30px;
-            }
-        }
-
-        P {
-            padding-bottom: 75px;
-        }
-    }
-
-    .blog-wrapper {
-        .single-blog-item {
-            @include respond(tab-port) {
-                margin-bottom: 30px;
-            }
-
-            .card {
-                img {
-                    border-radius: 15px 15px 0px 0px;
-
-                }
-
-                .card-body {
-                    padding: 25px 30px;
-
-                    a {
-                        color: $primary-color;
-
-                        span {
-                            margin-left: 10px;
-                        }
-                    }
-                }
-            }
-        }
+        padding: 50px 0;
     }
 }
 

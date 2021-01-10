@@ -1,7 +1,8 @@
 @import "mixins/typhography";
 //Button
 .btn-primary {
-    @include btn-primary;
+    @include btn;
+
     &:hover {
         color: $body-background-color;
         background-color: $primary-color;
@@ -11,7 +12,7 @@
         border: none;
         box-shadow: none;
         outline: none;
-        color: $body-background-color;
+        color: $body-background-color !important;
         background-color: $primary-color;
     }
 
@@ -25,10 +26,11 @@
 }
 
 .btn-secondary {
-    @include btn-secondary;
+    @extend .btn-primary;
+    background-color: $secondary-color !important;
     &:hover {
         color: $body-background-color;
-        background-color: $heading-color;
+        background-color: $secondary-color;
         text-decoration: none;
     }
     &:active{
@@ -36,7 +38,7 @@
         box-shadow: none;
         outline: none;
         color: $body-background-color;
-        background-color: $heading-color;
+        background-color: $secondary-color;
     }
 
     &:focus {
@@ -44,6 +46,7 @@
         box-shadow: none !important;
         outline: none;
         color: $body-background-color;
-        background-color: $heading-color;
+        background-color: $secondary-color;
     }
 }
+
