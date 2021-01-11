@@ -1,0 +1,12 @@
+#menu-booking-section {
+
+    padding: 130px 0px 200px;
+
+    @include respond(tab-port) {
+        padding: 30px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 0 0 50px;
+    }
+}

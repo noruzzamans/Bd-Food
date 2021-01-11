@@ -1,0 +1,11 @@
+.menu-item-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu-item-meta-list {
+        text-align: center;
+        span {
+            display: block;
+        }
+    }
+}

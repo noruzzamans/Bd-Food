@@ -269,7 +269,7 @@ body {
   overflow-x: hidden; }
 
 h1 {
-  font-family: "Muli";
+  font-family: "Gilroy";
   font-size: 70px;
   color: #130849;
   font-weight: 700;
@@ -278,7 +278,7 @@ h1 {
   margin-bottom: 0; }
 
 h2 {
-  font-family: "Muli";
+  font-family: "Gilroy";
   font-size: 48px;
   color: #130849;
   font-weight: 700;
@@ -287,7 +287,7 @@ h2 {
   margin: 0; }
 
 h3 {
-  font-family: "Muli";
+  font-family: "Gilroy";
   font-size: 35px;
   color: #130849;
   font-weight: 700;
@@ -296,7 +296,7 @@ h3 {
   margin: 0; }
 
 h4 {
-  font-family: "Muli";
+  font-family: "Gilroy";
   font-size: 24px;
   color: #130849;
   font-weight: 700;
@@ -305,7 +305,7 @@ h4 {
   margin: 0; }
 
 h5 {
-  font-family: "Muli";
+  font-family: "Gilroy";
   font-size: 20px;
   color: #130849;
   font-weight: 700;
@@ -314,7 +314,7 @@ h5 {
   margin: 0; }
 
 h6 {
-  font-family: "Muli";
+  font-family: "Gilroy";
   font-size: 17px;
   color: #130849;
   font-weight: 700;
@@ -629,6 +629,78 @@ p {
     .blog-section .blog-wrapper .single-blog-item .card .card-body a span {
       margin-left: 10px; }
 
+@media only screen and (max-width: 991px) {
+  .breakfast-section .menu-title h2, .lunch-section .menu-title h2, .dinner-section .menu-title h2, .beverage-section .menu-title h2 {
+    font-size: 38px; } }
+
+@media only screen and (max-width: 767px) {
+  .breakfast-section .menu-title h2, .lunch-section .menu-title h2, .dinner-section .menu-title h2, .beverage-section .menu-title h2 {
+    font-size: 30px;
+    line-height: 44px; } }
+
+.breakfast-section .menu-title p, .lunch-section .menu-title p, .dinner-section .menu-title p, .beverage-section .menu-title p {
+  margin: 20px 0 70px; }
+  @media only screen and (max-width: 767px) {
+    .breakfast-section .menu-title p, .lunch-section .menu-title p, .dinner-section .menu-title p, .beverage-section .menu-title p {
+      margin: 20px 0 40px; } }
+
+#menu-booking-form {
+  padding: 170px 0px 200px; }
+  @media only screen and (max-width: 991px) {
+    #menu-booking-form {
+      padding: 70px 0 100px; } }
+  @media only screen and (max-width: 767px) {
+    #menu-booking-form {
+      padding: 20px 0 50px; } }
+
+.lunch-section .single-menu-item .menu-item-price {
+  color: #F54300; }
+
+.lunch-section .single-menu-item .menu-item-content a {
+  color: #F54300;
+  background-color: #FFF5F2; }
+
+.dinner-section {
+  padding-top: 170px; }
+  @media only screen and (max-width: 991px) {
+    .dinner-section {
+      padding-top: 70px; } }
+  @media only screen and (max-width: 767px) {
+    .dinner-section {
+      padding-top: 20px; } }
+
+#menu-newsletter-section {
+  padding: 170px 0px 200px; }
+  @media only screen and (max-width: 991px) {
+    #menu-newsletter-section {
+      padding: 70px 0 100px; } }
+  @media only screen and (max-width: 767px) {
+    #menu-newsletter-section {
+      padding: 20px 0 50px; } }
+
+.beverage-section {
+  padding-bottom: 170px; }
+  @media only screen and (max-width: 991px) {
+    .beverage-section {
+      padding-bottom: 70px; } }
+  @media only screen and (max-width: 767px) {
+    .beverage-section {
+      padding-bottom: 20px; } }
+  .beverage-section .single-menu-item .menu-item-price {
+    color: #F54300; }
+  .beverage-section .single-menu-item .menu-item-content a {
+    color: #F54300;
+    background-color: #FFF5F2; }
+
+#menu-booking-section {
+  padding: 130px 0px 200px; }
+  @media only screen and (max-width: 991px) {
+    #menu-booking-section {
+      padding: 30px 0 100px; } }
+  @media only screen and (max-width: 767px) {
+    #menu-booking-section {
+      padding: 0 0 50px; } }
+
 .featured-wrapper .featured-images img {
   width: 100%; }
 
@@ -728,7 +800,7 @@ p {
   border-radius: 30px;
   border: none;
   color: #ffffff;
-  font-family: "Muli";
+  font-family: "Gilroy";
   font-size: 17px;
   line-height: 22px;
   font-weight: 700;
@@ -834,7 +906,8 @@ p {
   box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05); }
   @media only screen and (max-width: 991px) {
     .booking-form-wrapper {
-      padding: 30px; } }
+      padding: 30px;
+      border-radius: 20px; } }
   @media only screen and (max-width: 991px) {
     .booking-form-wrapper .booking-btn-wrapper {
       width: 100%; }
@@ -1108,6 +1181,9 @@ p {
   @media only screen and (max-width: 767px) {
     .newsletter-wrapper {
       padding: 30px; } }
+  @media only screen and (max-width: 991px) {
+    .newsletter-wrapper .newsletter-img {
+      text-align: center; } }
   .newsletter-wrapper .newsletter-text h3 {
     line-height: 44px; }
   .newsletter-wrapper .newsletter-text h2 {
@@ -1115,9 +1191,8 @@ p {
     margin: 10px 0 15px; }
   @media only screen and (max-width: 991px) {
     .newsletter-wrapper .newsletter-text {
-      margin-bottom: 30px; }
-      .newsletter-wrapper .newsletter-text h2 {
-        font-size: 38px; } }
+      text-align: center;
+      margin: 30px 0; } }
   @media only screen and (max-width: 767px) {
     .newsletter-wrapper .newsletter-text h2 {
       font-size: 30px;
@@ -1134,14 +1209,133 @@ p {
     width: 100%;
     z-index: 1; }
     .newsletter-form .form-inline .input-group input.form-control {
-      padding: 17px 30px;
+      padding: 18px 30px;
       border-radius: 30px;
-      padding-right: 36%; }
+      padding-right: 36%;
+      background-color: #F1FBF1; }
   .newsletter-form .form-inline .input-group .subscribe-btn {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 2; }
+
+.single-menu-item {
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05);
+  margin-bottom: 30px; }
+  .single-menu-item ul {
+    margin-bottom: 0; }
+    .single-menu-item ul li p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      position: relative; }
+      .single-menu-item ul li p span {
+        position: relative;
+        z-index: 3;
+        background: #fff; }
+        .single-menu-item ul li p span.menu-item-name {
+          font-family: "Gilroy";
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 27px;
+          color: #130849; }
+        .single-menu-item ul li p span.menu-item-price {
+          font-family: "Gilroy";
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 27px;
+          color: #7DD87D; }
+      .single-menu-item ul li p::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        border-bottom: 1px dashed #707070;
+        display: block; }
+    .single-menu-item ul li .menu-item-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px; }
+      .single-menu-item ul li .menu-item-content span {
+        font-size: 15px;
+        font-weight: 300; }
+      .single-menu-item ul li .menu-item-content a {
+        font-size: 15px;
+        font-weight: 700;
+        color: #7DD87D;
+        padding: 5px 17px;
+        background-color: #EFFFED;
+        border-radius: 5px; }
+
+.menu-items {
+  position: relative;
+  margin-bottom: 70px; }
+  .menu-items .menu-item .menu-item-img img {
+    width: 100%;
+    border-radius: 10px; }
+  .menu-items .menu-item .menu-item-content .menu-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 10px; }
+    .menu-items .menu-item .menu-item-content .menu-item-title h4 {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600; }
+    .menu-items .menu-item .menu-item-content .menu-item-title span {
+      font-family: 'Gilroy';
+      font-size: 24px;
+      line-height: 27px;
+      font-weight: 700;
+      color: #7DD87D; }
+  .menu-items .menu-item .menu-item-content p {
+    font-weight: 300;
+    margin-bottom: 30px; }
+
+.menu-item-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .menu-item-meta .menu-item-meta-list {
+    text-align: center; }
+    .menu-item-meta .menu-item-meta-list span {
+      display: block; }
+
+.menu-item-info-wrapper {
+  position: absolute;
+  top: calc(30% - 100px);
+  right: calc(18% - 100px);
+  z-index: 1; }
+  .menu-item-info-wrapper .menu-item-info {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 40px rgba(171, 178, 204, 0.27);
+    text-align: center;
+    position: relative; }
+    .menu-item-info-wrapper .menu-item-info img {
+      filter: drop-shadow(0px 6px 22px rgba(19, 8, 73, 0.25));
+      transform: translateY(13%); }
+    .menu-item-info-wrapper .menu-item-info .menu-item-info-text span {
+      background-color: #130849;
+      color: #ffffff;
+      border-radius: 5px 26px 26px 26px;
+      width: 52px;
+      height: 52px;
+      font-size: 17px;
+      line-height: 27;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 10px;
+      right: 10px; }
 
 .form-control {
   padding: 15px 30px;
