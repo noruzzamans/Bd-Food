@@ -6,6 +6,7 @@
 
         .footer-logo-text {
             padding: 25px 0px 35px;
+
             p {
                 font-size: 15px;
                 font-weight: 300;
@@ -48,11 +49,13 @@
             @include respond(phone-large) {
                 margin-top: 50px;
             }
+
             .footer-address-info {
                 p {
                     font-size: 15px;
                     font-weight: 300;
                     margin-bottom: 10px;
+
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -73,6 +76,7 @@
 
             ul {
                 margin-bottom: 0;
+
                 li {
                     float: left;
                     width: 50%;
@@ -85,46 +89,13 @@
                         padding-bottom: 15px;
                         line-height: 21px;
                     }
+                    &:hover {
+                        a {
+                            color: $primary-color;
+                        }
+                    }
                 }
             }
         }
-
-
-        // .footer-widget-date-time {
-        //     ul {
-        //         li {
-        //             display: flex;
-        //             align-items: center;
-
-        //             img {
-        //                 margin-top: 2px;
-        //                 margin-right: 5px;
-        //             }
-
-        //             p {
-        //                 display: flex;
-        //                 align-items: center;
-        //                 justify-content: space-between;
-        //                 width: 100%;
-        //                 position: relative;
-
-        //                 span {
-        //                     position: relative;
-        //                     z-index: 3;
-        //                     background: #fff;
-        //                 }
-
-        //                 &::after {
-        //                     content: "";
-        //                     position: absolute;
-        //                     bottom: 5px;
-        //                     width: 100%;
-        //                     border-bottom: 1px dashed #707070;
-        //                     display: block;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
     }
 }

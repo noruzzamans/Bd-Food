@@ -1,0 +1,44 @@
+.menu-slider {
+    .menu-slide {
+        .owl-stage-outer {
+            border-radius: 10px;
+            .owl-item {
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+        .owl-nav {
+            margin-top: 0;
+            button {
+                &:focus {
+                    outline: none;
+                }
+
+                &.owl-prev {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: calc(50% - 20px);
+                    left: 10px;
+                    background-color: #1A1C24;
+                    opacity: 0.72;
+                }
+            }
+
+            .owl-next {
+                width: 35px;
+                height: 35px;
+                line-height: 10px;
+                border-radius: 50%;
+                position: absolute;
+                top: calc(50% - 20px);
+                right: 10px;
+                background-color: #1A1C24;
+                opacity: 0.72;
+            }
+        }
+    }
+}

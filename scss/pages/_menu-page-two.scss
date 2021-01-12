@@ -1,12 +1,27 @@
+.lunch-menu-items {
+    .menu-items {
+        .menu-item {
+            .menu-item-content {
+                .menu-item-title {
+                    h4 {
+                        font-size: 30px;
+                        line-height: 37px;
+                    }
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 #menu-booking-section {
 
     padding: 130px 0px 200px;
 
-    @include respond(tab-port) {
-        padding: 30px 0 100px;
-    }
+}
 
-    @include respond(phone-large) {
-        padding: 0 0 50px;
-    }
+#menu-newsletters-section {
+    padding: 200px 0;
 }

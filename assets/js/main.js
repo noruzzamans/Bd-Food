@@ -65,12 +65,32 @@
         });
 
         //testimonial carousel slider
-        $('.owl-carousel').owlCarousel({
+        $('.testimonial-slider').owlCarousel({
             loop: true,
             margin: 10,
             nav: false,
             dots: true,
             items: 1,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+        //Menu carousel slider
+        $('.menu-slide').owlCarousel({
+            margin: 20,
+            loop: true,
+            nav: true,
+            navText: ["<img src='assets/images/arrow-left.svg' alt=''>", "<img src='assets/images/arrow-rights.svg' alt=''>"],
+            dots: false,
             responsive: {
                 0: {
                     items: 1
