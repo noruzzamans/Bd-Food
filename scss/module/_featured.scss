@@ -6,11 +6,6 @@
     }
 
     .featured-text {
-        padding-top: 70px;
-
-        h2 {
-            margin: 5px 0px 20px;
-        }
 
         @include respond(tab-port) {
             text-align: center;
@@ -31,9 +26,5 @@
                 font-size: 30px;
             }
         }
-    }
-
-    .featured-btn {
-        margin-top: 45px;
     }
 }

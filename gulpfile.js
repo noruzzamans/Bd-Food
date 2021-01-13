@@ -3,12 +3,12 @@ const scss = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 
 //BOOTSTRAP SCSS COMPILER
-function bootstrapScssCompiler () {
+function bootstrapScssCompiler() {
     return gulp
-    .src("scss/bootstrap/**/*.scss")
-    .pipe(scss().on('error', scss.logError))
-    .pipe(gulp.dest("assets/css/"))
-    .pipe(browserSync.stream())
+        .src("scss/bootstrap/**/*.scss")
+        .pipe(scss().on('error', scss.logError))
+        .pipe(gulp.dest("assets/css/"))
+        .pipe(browserSync.stream())
 }
 gulp.task(bootstrapScssCompiler);
 
@@ -35,4 +35,4 @@ function createServer() {
 }
 gulp.task(createServer);
 
-gulp.task("watch", gulp.series(bootstrapScssCompiler,sassCompiler, createServer));
+gulp.task("watch", gulp.series(bootstrapScssCompiler, sassCompiler, createServer));

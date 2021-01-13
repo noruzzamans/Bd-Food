@@ -15,7 +15,6 @@
         }
 
         p {
-            margin: 20px 0 70px;
 
             @include respond(phone-large) {
                 margin: 20px 0 40px;

@@ -4,6 +4,15 @@
     right: calc(18% - 100px);
     z-index: 1;
 
+    @include respond(tab-port) {
+        top: calc(35% - 100px);
+    }
+
+    @include respond(phone-large) {
+        top: calc(38% - 100px);
+        right: calc(30% - 100px);
+    }
+
     .menu-item-info {
         width: 200px;
         height: 200px;
@@ -13,10 +22,21 @@
         text-align: center;
         position: relative;
 
+        @include respond(phone-large) {
+            width: 100px;
+            height: 100px;
+        }
+
         img {
 
             filter: drop-shadow(0px 6px 22px rgba(19, 8, 73, 0.25));
-            transform: translateY(13%);
+            transform: translateY(2%);
+            width: 100%;
+            padding: 20px;
+
+            @include respond(phone-large) {
+                height: auto;
+            }
 
         }
 
@@ -35,8 +55,16 @@
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                bottom: 10px;
-                right: 10px;
+                bottom: 15px;
+                right: 12px;
+
+                @include respond(phone-large) {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 12px;
+                    bottom: 0;
+                    right: 0;
+                }
             }
         }
     }
