@@ -1,5 +1,26 @@
+.menu-breadcrumb-version-two-section {
+    background-image: url(../images/menu-bg-one.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(tab-land) {
+        padding: 50px 0 150px;
+    }
+
+    @include respond(phone-large) {
+        padding: 50px;
+    }
+}
+
 .lunch-menu-items {
-    margin-bottom: 140px;
+    margin-bottom: 110px;
+
+    @include respond(tab-port) {
+        margin-bottom: 70px;
+    }
+
     .menu-items {
         .menu-item {
             .menu-item-content {
@@ -8,6 +29,7 @@
                         font-size: 30px;
                         line-height: 37px;
                     }
+
                     span {
                         font-size: 30px;
                     }
@@ -24,17 +46,20 @@
     @include respond(tab-port) {
         padding: 30px 0 100px;
     }
+
     @include respond(phone-large) {
-        padding:  0 0  70px;
+        padding: 0 0 70px;
     }
 
 }
 
 #menu-newsletters-section {
-    padding: 200px 0;
+    padding: 90px 0 200;
+
     @include respond(tab-port) {
         padding: 100px 0;
     }
+
     @include respond(phone-large) {
         padding: 50px 0;
     }

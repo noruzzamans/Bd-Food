@@ -59,11 +59,43 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">About us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pages</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <ul>
+                                    <li class="dropdown-item">
+                                        <a href="menu-page-one.html active">Menu One</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="menu-page-two.html">Menu Two</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="booking.html">Booking Table</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="menu-page-one.html">Menu</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <ul>
+                                    <li class="dropdown-item">
+                                        <a href="menu-page-one.html active">Menu One</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="menu-page-two.html">Menu Two</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="booking.html">Booking Table</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Shop</a>
@@ -80,6 +112,31 @@
 
     <main>
 
+        <!-- Start Menu Breadcrumb section -->
+        <section class="menu-breadcrumb-section">
+            <div class="container">
+                <div class="row justify-content-md-center text-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="breadcrumb-content">
+                            <h3 class="sub-title">Menu</h3>
+                            <h2 class="mt-10 mb-20">Food Item</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod tempor incididunt ut
+                                labore
+                                et dolore magna aliqua
+                            </p>
+                            <nav class="mt-30" aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Menu Breadcrumb section -->
+
         <!-- Start Breakfast section -->
         <section class="breakfast-section">
             <div class="container">
@@ -87,7 +144,8 @@
                     <div class="col-lg-6 col-12">
                         <div class="menu-title">
                             <h2>Breakfast</h2>
-                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod tempor incididunt ut
+                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod
+                                tempor incididunt ut
                                 labore et dolore magna</p>
                         </div>
                     </div>
@@ -298,7 +356,8 @@
                     <div class="col-lg-6 col-12">
                         <div class="menu-title">
                             <h2>Lunch</h2>
-                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod tempor incididunt ut
+                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod
+                                tempor incididunt ut
                                 labore et dolore magna</p>
                         </div>
                     </div>
@@ -450,7 +509,8 @@
                     <div class="col-lg-6 col-12">
                         <div class="menu-title">
                             <h2>Dinner</h2>
-                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod tempor incididunt ut
+                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod
+                                tempor incididunt ut
                                 labore et dolore magna</p>
                         </div>
                     </div>
@@ -642,7 +702,8 @@
                     <div class="col-lg-6 col-12">
                         <div class="menu-title">
                             <h2>Beverage</h2>
-                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod tempor incididunt ut
+                            <p class="mt-20 mb-70">Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod
+                                tempor incididunt ut
                                 labore et dolore magna</p>
                         </div>
                     </div>
@@ -848,42 +909,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-md-6 col-lg-4">
-                    <div class="footer-widget-item">
-                        <div class="footer-widget-title">
-                            <h4>Opening <span>Hours</span></h4>
-                        </div>
-                        <div class="footer-widget-date-time">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <img src="assets/images/clock.svg" alt="clock">
-                                    <p><span> Sunday</span><span>9:00 - 22:00</span></p>
-                                </li>
-                                <li>
-                                    <img src="assets/images/clock.svg" alt="clock">
-                                    <p><span> Monday</span><span>9:00 - 22:00</span></p>
-                                </li>
-                                <li>
-                                    <img src="assets/images/clock.svg" alt="clock">
-                                    <p><span> Tuesday</span><span>9:00 - 22:00</span></p>
-                                </li>
-                                <li>
-                                    <img src="assets/images/clock.svg" alt="clock">
-                                    <p><span> Wednesday</span><span>9:00 - 22:00</span></p>
-                                </li>
-                                <li>
-                                    <img src="assets/images/clock.svg" alt="clock">
-                                    <p><span> Thursday</span><span>9:00 - 22:00</span></p>
-                                </li>
-                                <li>
-                                    <img src="assets/images/clock.svg" alt="clock">
-                                    <p><span> Friday</span><span>9:00 - 22:00</span></p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </footer>
