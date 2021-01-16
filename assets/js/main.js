@@ -37,11 +37,8 @@
         $('.select-person').select2();
 
 
-        var bookingFormPickUpDate = $('.booking-form-pickup-date');
-        var bookingFormPickUptime = $('.booking-form-pickup-time');
-
         // Initiate datetime picker for pickup date
-        bookingFormPickUpDate.daterangepicker({
+        $('.booking-form-pickup-date').daterangepicker({
             startDate: moment(),
             minDate: moment(),
             singleDatePicker: true,
@@ -51,17 +48,19 @@
                 format: 'DD/MM/YYYY'
             }
         });
+
         // Initiate datetime picker for pickup date
-        bookingFormPickUptime.daterangepicker({
-            // startDate: moment(),
-            // minDate: moment(),
-            singleDatePicker: true,
-            pickDate: false,
+        $('.booking-form-pickup-time').daterangepicker({
             timePicker: true,
-            showDropdowns: true,
+            singleDatePicker: true,
+            timePicker24Hour: true,
+            timePickerIncrement: 1,
+            timePickerSeconds: true,
             locale: {
                 format: 'HH:mm:ss'
             }
+        }).on('show.daterangepicker', function (ev, picker) {
+            picker.container.find(".calendar-table").hide();
         });
 
         //testimonial carousel slider

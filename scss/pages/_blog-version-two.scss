@@ -1,0 +1,23 @@
+//blog version one pages 
+.blog-version-two-breadcrumb-section {
+    background-image: url(../images/menu-bg-one.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(tab-land) {
+        padding: 50px 0 150px;
+    }
+
+    @include respond(phone-large) {
+        padding: 50px;
+    }
+
+}
+
+.media {
+    .blog-post-date {
+        margin-right: 40px;
+    }
+}

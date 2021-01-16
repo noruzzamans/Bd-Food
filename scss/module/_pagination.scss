@@ -1,0 +1,46 @@
+ul {
+	margin-bottom: 0;
+
+	&.pagination {
+		@include respond(tab-port) {
+			margin-top: 35px;
+		}
+
+		li {
+			margin-right: 10px;
+
+			&.page-item {
+				a {
+					border: none;
+
+					&.page-link {
+						font-size: 15px;
+						font-weight: 600;
+						padding: 15px;
+						border-radius: 50%;
+						width: 45px;
+						height: 45px;
+						line-height: 12px;
+						text-align: center;
+
+						&.active {
+							background-color: #EFFFED;
+							color: $primary-color;
+						}
+
+						&:focus {
+							border: none;
+							box-shadow: none !important;
+							outline: none;
+						}
+
+						&:hover {
+							background-color: #EFFFED;
+							color: $primary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,4 +1,5 @@
 @import "mixins/typhography";
+
 //Button
 .btn-primary {
     @include btn;
@@ -8,7 +9,8 @@
         background-color: $primary-color;
         text-decoration: none;
     }
-    &:active{
+
+    &:active {
         border: none;
         box-shadow: none;
         outline: none;
@@ -28,12 +30,14 @@
 .btn-secondary {
     @extend .btn-primary;
     background-color: $secondary-color !important;
+
     &:hover {
         color: $body-background-color;
         background-color: $secondary-color;
         text-decoration: none;
     }
-    &:active{
+
+    &:active {
         border: none;
         box-shadow: none;
         outline: none;
@@ -50,3 +54,31 @@
     }
 }
 
+.btn-light {
+    @extend .btn-primary;
+    color: $body-font-color;
+    font-size: 15px;
+    background-color: $btn-light-color !important;
+
+    &:hover {
+        color: $body-font-color;
+        background-color: $btn-light-color;
+        text-decoration: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $body-font-color;
+        background-color: $btn-light-color;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        color: $body-font-color;
+        background-color: $btn-light-color;
+    }
+}
