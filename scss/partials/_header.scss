@@ -53,7 +53,6 @@
                             li {
                                 font-size: 14px;
                                 background-color: $heading-color;
-                                border-radius: 4px;
 
                                 &:last-child {
                                     border-bottom: none;
@@ -61,7 +60,6 @@
 
                                 &:hover {
                                     background: $primary-color;
-                                    border-radius: 4px;
 
                                     a {
                                         color: $body-background-color;
@@ -100,7 +98,7 @@
         left: 0;
         right: 0;
         width: 100%;
-        box-shadow: 0px 0px 1px $heading-color;
+        box-shadow: 0px 0px 1px #13084982;
         z-index: 999999;
         background-color: inherit;
     }

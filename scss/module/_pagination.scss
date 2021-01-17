@@ -2,8 +2,10 @@ ul {
 	margin-bottom: 0;
 
 	&.pagination {
+		margin-top: 100px;
+
 		@include respond(tab-port) {
-			margin-top: 35px;
+			margin: 35px;
 		}
 
 		li {

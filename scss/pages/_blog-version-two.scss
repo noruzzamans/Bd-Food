@@ -1,4 +1,4 @@
-//blog version one pages 
+//blog version Two pages 
 .blog-version-two-breadcrumb-section {
     background-image: url(../images/menu-bg-one.svg);
     background-repeat: no-repeat;
@@ -16,8 +16,57 @@
 
 }
 
-.media {
-    .blog-post-date {
-        margin-right: 40px;
+.blog-version-two-wrapper {
+    padding-bottom: 200px;
+
+    @include respond(tab-port) {
+        padding-bottom: 100px;
+    }
+
+    @include respond(phone-large) {
+        padding-bottom: 50px;
+    }
+
+    .single-blog-item {
+        @include respond(tab-port) {
+            margin-bottom: 30px;
+        }
+
+        .card {
+            .card-body {
+                padding: 25px;
+
+                .media {
+                    .blog-post-date {
+                        margin-right: 30px;
+                        background-color: #FFF5F2;
+                        padding: 15px 20px;
+                        border-radius: 10px;
+
+                        P {
+                            color: #F54300;
+                            font-size: 30px;
+                            line-height: 22px;
+
+                            span {
+                                font-family: $heading-font-family;
+                                font-size: 17px;
+                                font-weight: 600;
+                                line-height: 22px;
+                                display: block;
+                                color: #F54300;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+
+                    .media-body {
+                        a {
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

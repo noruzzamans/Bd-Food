@@ -1,0 +1,70 @@
+.service-breadcrumb-section {
+    background-image: url(../images/menu-bg-one.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(tab-land) {
+        padding: 50px 0 150px;
+    }
+
+    @include respond(phone-large) {
+        padding: 50px;
+    }
+}
+
+.service-section-wrapper {
+    .single-service-item {
+        margin-bottom: 30px;
+
+        .card {
+            .card-body {
+                padding: 20px 30px 30px 30px;
+            }
+        }
+    }
+}
+
+.service-offer-section {
+    padding: 170px 0 200px;
+
+    @include respond(tab-port) {
+        padding: 70px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 20px 0 50px;
+    }
+
+    .service-offer-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .service-offer-content {
+        margin-left: 8.33%;
+        padding: 50px 0;
+
+        @include respond(tab-port) {
+            margin-left: 0;
+            margin-top: 100px;
+            text-align: center;
+            padding: 0;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+
+        @include respond(phone-large) {
+            margin-top: 50px;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -2,18 +2,23 @@
     padding: 30px 50px;
     border-radius: 60px;
     box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05);
+
     @include respond(tab-port) {
         padding: 30px;
         border-radius: 20px;
     }
 
     .booking-btn-wrapper {
-        @include respond(tab-port) {
+        .btn-primary {
             width: 100%;
+        }
+    }
+}
 
-            .btn-primary {
-                width: 100%;
-            }
+.daterangepicker {
+    .drp-buttons {
+        .btn {
+            border-radius: 50%;
         }
     }
 }
