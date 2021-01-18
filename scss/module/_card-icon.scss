@@ -1,0 +1,17 @@
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-cart-icon {
+        width: 32px;
+        height: 32px;
+        background-color: #EFFFED;
+        border-radius: 50%;
+        text-align: center
+    }
+
+    .card-heart-icon {
+        @extend .card-cart-icon;
+    }
+}

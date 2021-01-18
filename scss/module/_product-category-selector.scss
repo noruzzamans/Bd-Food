@@ -1,0 +1,87 @@
+.product-category-selector {
+    width: 50%;
+    display: inline-block;
+
+    .form-group {
+        position: relative;
+        margin-bottom: 0;
+
+        .product-category-selector-icon {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+
+        .select2-container--default {
+            width: 100% !important;
+
+            ul {
+                li {
+                    padding-left: 10px;
+                    font-size: 14px;
+                    border-bottom: 0.5px solid #cccfdc;
+
+                    &:last-child {
+                        border-bottom: none;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+
+            .select2-selection--single {
+                background-color: #ffffff;
+                border-radius: 10px !important;
+                border: 0.5px solid #cccfdc !important;
+                padding-left: 15px;
+                height: 45px;
+
+                .select2-selection__rendered {
+                    color: $body-font-color;
+                    line-height: 42px;
+                    padding: 0;
+                }
+
+                .select2-selection__arrow {
+                    display: none;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .select2-dropdown {
+                border: 0.5px solid #cccfdc !important;
+                background-color: #ffffff;
+                margin-top: 0px;
+                border-radius: 10px;
+            }
+
+            .select2-search--dropdown {
+                background-color: #ffffff;
+                padding: 5px;
+                border-radius: 10px;
+
+                .select2-search__field {
+                    background-color: #ffffff;
+                    padding: 0;
+                    border: none;
+                    padding-left: 15px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .select2-results {
+                background-color: #ffffff;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top: 0.5px solid #cccfdc !important;
+
+            }
+        }
+    }
+}

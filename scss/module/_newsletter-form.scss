@@ -7,10 +7,15 @@
                 width: 100%;
                 z-index: 1;
                 &.form-control {
-                    padding: 18px 30px;
+                    padding: 15px 30px;
                     border-radius: 30px;
                     padding-right: 36%;
                     background-color: #F1FBF1;
+                    border: none;
+                    &:focus {
+                        box-shadow:  none;
+                        outline: none;
+                    }
                 }
             }
 

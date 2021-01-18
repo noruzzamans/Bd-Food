@@ -65,6 +65,18 @@
             h2 {
                 font-size: 30px;
             }
+            h3 {
+                font-size: 28px;
+            }
+        }
+
+        .service-offer-btn {
+            @include respond(iphone-x) {
+                width: 100%;
+                .btn-primary {
+                    width: 100%;
+                }
+            }
         }
     }
 }
