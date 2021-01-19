@@ -1,5 +1,9 @@
-.blog-sidebar {
-    margin-left: 7.33%;
+.shop-sidebar {
+    margin-right: 7.33%;
+
+    @include respond(tab-port) {
+        margin-right: 0;
+    }
 
     h4 {
         font-size: 18px;
@@ -10,105 +14,41 @@
         margin-bottom: 30px;
     }
 
-    @include respond(tab-port) {
-        margin-left: 0;
-        margin-top: 5px;
-    }
-
-    .recent-post {
+    .recent-product {
         padding: 35px;
         border-radius: 10px;
         background-color: $body-background-color;
         box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.05);
 
-        .recent-post-item {
+        .recent-product-item {
             display: flex;
             align-items: center;
 
-            .recent-post-thumbnail {
+            .recent-product-thumbnail {
                 margin-right: 15px;
 
                 img {
-                    border-radius: 5px;
+                    filter: drop-shadow(0px 6px 16px rgba(19, 8, 73, 0.25));
                 }
             }
 
-            .recent-post-content {
+            .recent-product-content {
                 h6 {
                     font-size: 15px;
                     line-height: 20px;
                     font-weight: 600;
                 }
 
-                .post-meta-item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    .post-meta {
-                        display: flex;
-                        align-items: center;
-
-                        p {
-                            font-size: 12px;
-                            font-weight: 300;
-                            color: $body-font-color;
-                        }
-
-                        .post-date {
-                            display: flex;
-                            align-items: center;
-
-                            img {
-                                margin-right: 5px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .recent-post-article-list {
-        padding: 35px;
-        border-radius: 10px;
-        background-color: $body-background-color;
-        box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.05);
-
-        ul {
-            margin-bottom: 0;
-
-            li {
-                margin-bottom: 15px;
-                transition: all .3s ease;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                a {
-                    img {
-                        margin-right: 15px;
-                    }
-
-                    color: $body-font-color;
+                p {
                     font-size: 15px;
                     line-height: 22px;
                     font-weight: 300;
-
-                    &:hover {
-                        color: $primary-color;
-                    }
-                }
-
-                &:hover {
-                    margin-left: 10px;
                 }
             }
         }
     }
 
-    .post-tag {
+    .product-tag {
         padding: 35px 35px 20px;
         border-radius: 10px;
         background-color: $body-background-color;
@@ -134,7 +74,7 @@
         }
     }
 
-    .post-social-shere {
+    .shop-social-shere {
         padding: 35px;
         border-radius: 10px;
         background-color: $body-background-color;

@@ -1,0 +1,45 @@
+.grid-list {
+    display: inline-flex;
+    align-items: baseline;
+
+    ul {
+        &.nav-tabs {
+            border-bottom: none;
+
+            @include respond(phone-large) {
+                display: none;
+            }
+        }
+
+        display: flex;
+        align-items: center;
+
+        li {
+            &.nav-item {}
+
+            margin-right: 15px;
+
+            a {
+                &.nav-link {
+                    border: 1px solid transparent;
+                    padding: 9px 15px;
+
+                    &:hover {
+                        border: 1px solid transparent;
+                    }
+
+                    &.active {
+                        background-color: $body-background-color;
+                        border: 1px solid #CCCFDC;
+                        border-radius: 10px;
+                        color: $body-font-color;
+                    }
+                }
+
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

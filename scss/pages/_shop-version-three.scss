@@ -1,0 +1,240 @@
+.shop-version-three-breadcrumb-section {
+    background-image: url(../images/shop-version-one-breadcrumb-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(tab-land) {
+        padding: 50px 0 150px;
+    }
+
+    @include respond(tab-port) {
+        h2 {
+            font-size: 38px;
+            line-height: 44px;
+        }
+    }
+
+    @include respond(phone-large) {
+        padding: 50px 0;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+.shop-version-three-section {
+    margin-bottom: 200px;
+
+    @include respond(tab-port) {
+        margin-bottom: 100px;
+    }
+
+    @include respond(phone-large) {
+        margin-bottom: 50px;
+    }
+
+    .shop-topbar-wrapper {
+        border-bottom: 1px dashed $body-font-color;
+        padding-bottom: 30px;
+
+        .shop-topbar-left-item {
+            .product-category-selector {
+                width: 30%;
+                display: inline-block;
+                margin-right: 15px;
+
+                @include respond(tab-port) {
+                    margin-bottom: 30px;
+                    width: 77%;
+                }
+
+                @include respond(phone-large) {
+                    width: 100%;
+                }
+            }
+
+            .product-topbar-text {
+                display: inline-block;
+
+                @include respond(tab-port) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .shop-topbar-right-item {
+            .search-form {
+                width: 80%;
+                float: right;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .shop-version-three-product-wrapper {
+        .shop-version-three-product-items {
+            margin-top: 140px;
+
+            .tab-content {
+                .tab-pane {
+                    .shop-version-three-product-grid-section {
+                        .shop-version-three-product-grid-item {
+                            .product-card-wrapper {
+                                .card {
+                                    .card-body {
+                                        p {
+                                            margin: 15px 0 20px;
+                                        }
+
+                                        .product-rating-price {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+
+                                            .product-rating {
+                                                ul {
+                                                    li {
+                                                        float: left;
+
+                                                        img {
+                                                            margin-right: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .product-price {
+                                                span {
+                                                    font-size: 24px;
+                                                    font-weight: 700;
+                                                    color: $primary-color;
+                                                }
+
+                                                ;
+                                            }
+                                        }
+
+                                        .product-card-icon-btn {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            margin-top: 25px;
+
+                                            .card-icon {
+                                                .card-cart-icon {
+                                                    margin-right: 30px;
+                                                }
+                                            }
+
+                                            .card-btn {
+                                                .btn-primary {
+                                                    padding: 10px 25px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .shop-version-three-product-list-item {
+                        .shop-version-three-product-list-content {
+                            .product-card-wrapper {
+                                .card {
+                                    .card-body {
+                                        .card-title-rating {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+
+                                            h5 {
+                                                font-size: 20px;
+                                            }
+
+                                            .product-rating {
+                                                ul {
+                                                    li {
+                                                        float: left;
+
+                                                        img {
+                                                            margin-right: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        p {
+                                            margin: 15px 0;
+                                        }
+
+                                        .card-text-price {
+                                            display: flex;
+                                            align-items: stretch;
+                                            justify-content: space-between;
+
+                                            p {
+                                                margin: 0;
+                                                line-height: 22px;
+                                            }
+
+                                            .product-price {
+                                                span {
+                                                    font-size: 24px;
+                                                    font-weight: 700;
+                                                    color: $primary-color;
+                                                }
+                                            }
+                                        }
+
+                                        .product-card-icon-btn {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            margin-top: 25px;
+
+                                            .card-icon {
+                                                .card-cart-icon {
+                                                    margin-right: 30px;
+                                                }
+                                            }
+
+                                            .card-btn {
+                                                .btn-primary {
+                                                    padding: 10px 25px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            margin: -10px 0 0;
+
+            @include respond(tab-port) {
+                margin: -60px 0 0;
+            }
+        }
+    }
+}

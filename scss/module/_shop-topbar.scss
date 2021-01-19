@@ -1,0 +1,33 @@
+.shop-topbar-wrapper {
+    border-bottom: 1px dashed $body-font-color;
+    padding-bottom: 30px;
+
+    .shop-topbar-left-item {
+        .product-category-selector {
+            width: 50%;
+            display: inline-block;
+            margin-right: 30px;
+
+            @include respond(tab-port) {
+                margin-bottom: 30px;
+                width: 65%;
+            }
+
+            @include respond(phone-large) {
+                width: 100%;
+            }
+        }
+
+        .product-topbar-text {
+            display: inline-block;
+
+            @include respond(tab-port) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .shop-topbar-right-item {
+        .search-form {}
+    }
+}
