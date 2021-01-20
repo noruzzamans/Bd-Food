@@ -18,3 +18,21 @@
         }
     }
 }
+
+.shop-breadcrumb-section {
+    .breadcrumb {
+        li {
+            a {
+                font-family: 'Gilroy';
+                font-size: 20px;
+                line-height: 27px;
+            }
+
+            &.breadcrumb-item {
+                &.active {
+                    color: $body-font-color;
+                }
+            }
+        }
+    }
+}

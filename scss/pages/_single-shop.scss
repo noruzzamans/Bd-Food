@@ -1,0 +1,96 @@
+.single-product-section {
+    .single-product-content {
+        margin-left: 7.33%;
+
+        h3 {
+            font-size: 30px;
+            line-height: 37px;
+            font-weight: 600;
+        }
+
+        .single-product-rating-info {
+            .product-rating-icon {
+                ul {
+                    li {
+                        float: left;
+
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .product-rating-count {
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .single-product-price {
+
+            span {
+                color: $primary-color;
+                font-size: 24px;
+                line-height: 27px;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .single-product-add-to-cart-item {
+            margin-top: 37px;
+            
+            .product-quantity {
+                display: inline-block;
+                padding: 5px;
+                border: 1px solid #aaaaaa;
+                border-radius: 10px;
+                max-width: 100px;
+
+                .input_number {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        width: 100%;
+
+                        &.input_value {
+                            border: none;
+                            text-align: center;
+                            color: $body-font-color;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .input-icon {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $secondary-color;
+                        padding: 5px 7px;
+                        border-radius: 7px;
+
+                        i {
+                            color: $body-background-color;
+                        }
+                    }
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

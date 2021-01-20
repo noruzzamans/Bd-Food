@@ -1,0 +1,53 @@
+
+
+label {
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    padding-left: 35px;
+    cursor: pointer;
+
+    input {
+        display: none;
+
+        &:checked {
+            &+span {
+                &:after {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .checkmark {
+        visibility: hidden;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 22px;
+            height: 22px;
+            border: 2px solid $primary-color;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            visibility: visible;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: black;
+            position: absolute;
+            top: 11px;
+            left: 8px;
+            visibility: hidden;
+        }
+    }
+
+
+}

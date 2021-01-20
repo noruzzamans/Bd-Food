@@ -23,6 +23,7 @@
                 &.nav-link {
                     border: 1px solid transparent;
                     padding: 9px 15px;
+                    color: $body-font-color;
 
                     &:hover {
                         border: 1px solid transparent;
@@ -32,7 +33,7 @@
                         background-color: $body-background-color;
                         border: 1px solid #CCCFDC;
                         border-radius: 10px;
-                        color: $body-font-color;
+                        color: $secondary-color;
                     }
                 }
 
