@@ -127,6 +127,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Shop</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="fas fa-cart-plus active"></i></a>
+                        </li>
                     </ul>
                     <div class="header-btn">
                         <a href="booking.html" class="btn-secondary">Order Now</a>
@@ -163,6 +166,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12">
+                        <!-- Product Slider -->
                         <div class="single-product-slider">
                             <div class="owl-carousel owl-theme product-slider">
                                 <div class="item">
@@ -205,21 +209,46 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et sapien velit.
                                 Quisque id sagittis odio.</p>
-                            <div class="single-product-add-to-cart-item">
+                            <!-- Product Quantity Plus minus Button -->
+                            <div class="single-product-add-to-cart-item my-30">
                                 <div class="product-quantity">
                                     <div class="input_number">
                                         <input type="number" value="0" min="0" max="" class="input_value">
                                         <div class="input-icon">
-                                            <i class="fas fa-angle-up btn__plus"></i>
-                                            <i class="fas fa-angle-down btn__minus"></i>
+                                            <img class="btn__plus" src="assets/images/angle-up.svg" alt="">
+                                            <img class="btn__minus mt-15" src="assets/images/angle-downs.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="add-to-cart-button">
-                                    <a href="#">Add To Cart </a>
+                                <!-- Product Add To Cart Button -->
+                                <div class="single-product-add-to-cart-button mr-30">
+                                    <a href="add-to-cart.html" class="btn btn-primary">Add To Cart </a>
                                 </div>
+                                <!-- Product Buy Button -->
                                 <div class="buy-now">
-                                    <a href="#">Buy Now</a>
+                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                </div>
+                            </div>
+                            <!-- Product SKU Number -->
+                            <div class="single-product-sku-number mb-20">
+                                <p><span>Food code</span>: NT-002345-01-1</p>
+                            </div>
+                            <!-- Product Category -->
+                            <div class="single-product-category mb-20">
+                                <p><span>Category</span>: Italian</p>
+                            </div>
+                            <!-- Product Tags -->
+                            <div class="single-product-tag mb-20">
+                                <p><span>Tags</span>: Italian, Soups, Healthy</p>
+                            </div>
+                            <!-- Product Social Share Link -->
+                            <div class="single-product-social-share">
+                                <h4 class="mb-15">Follow Us</h4>
+                                <div class="single-product-social">
+                                    <a href="#"><img src="assets/images/facebook.svg" alt="Facebook"></a>
+                                    <a href="#"><img src="assets/images/twitter.svg" alt="Twitter"></a>
+                                    <a href="#"><img src="assets/images/pinterest.svg" alt="Pinterest"></a>
+                                    <a href="#"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
                                 </div>
                             </div>
                         </div>
@@ -228,6 +257,335 @@
             </div>
         </div>
         <!--End Single product section -->
+
+        <!--Start Single product details section -->
+        <section class="single-product-details-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-product-details-tabs">
+                            <h2>Details</h2>
+                            <div class="tabs">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item ">
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                            href="#pills-home" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">Description</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                            href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                            aria-selected="false">Additional
+                                            Information</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                            href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                            aria-selected="false">Reviews(10)</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="product-tab-dese">
+                                                    <p class="mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit. Cras
+                                                        porttitor tellus sit amet dui aliquam fringilla. Donec ultricies
+                                                        lacinia leo eget hendrerit. Fusce arcu neque, rhoncus vel
+                                                        tincidunt id, vulputate vel turpis. Suspendisse potenti. Mauris
+                                                        ullamcorper maximus feugiat. Curabitur eget neque vel augue
+                                                        consectetur mollis.
+                                                    </p>
+                                                    <p>Nullam blandit elit ut turpis ullamcorper mattis ut eget nibh.
+                                                        Donec fringilla et massa nec malesuada. Maecenas porttitor
+                                                        lectus id ante iaculis, vel pellentesque erat aliquam. Sed
+                                                        ultricies vehicula tortor, eu eleifend sapien posuere sed. Donec
+                                                        ultrices egestas nisl, at imperdiet quam dictum tempus.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <div class="row">
+                                            <div class="col-12">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="product-review">
+                                                    <!-- Product Comment Block -->
+                                                    <div class="product-comment-block">
+                                                        <div class="product-comment-author">
+                                                            <div class="media">
+                                                                <img class="align-self-start"
+                                                                    src="assets/images/post-author-1.png"
+                                                                    alt="product Author Images">
+                                                                <div class="media-body">
+                                                                    <div class="review-author-text mb-10">
+                                                                        <div class="review-author">
+                                                                            <h5>Philip Jackson</h5>
+                                                                        </div>
+                                                                        <div class="review-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-meta-item mb-15">
+                                                                        <div class="product-meta">
+                                                                            <div class="product-review-date">
+                                                                                <img src="assets/images/clock.svg"
+                                                                                    alt="clock">
+                                                                                <p>Dec 19, 2020</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>Lorem ipsum dosectetur adipisicing elit, sed
+                                                                        do.Lorem ipsum dolor sit
+                                                                        amet, consectetur Nulla fringilla purus</p>
+                                                                    <div class="reply-btn mt-15">
+                                                                        <a href="#">Reply <span><img
+                                                                                    src="assets/images/arrow-right.svg"
+                                                                                    alt="arrow-right"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-comment-author mt-50">
+                                                            <div class="media">
+                                                                <img class="align-self-start"
+                                                                    src="assets/images/post-author-2.png"
+                                                                    alt="product Author Images">
+                                                                <div class="media-body">
+                                                                    <div class="review-author-text mb-10">
+                                                                        <div class="review-author">
+                                                                            <h5>Philip Jackson</h5>
+                                                                        </div>
+                                                                        <div class="review-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-meta-item mb-15">
+                                                                        <div class="product-meta">
+                                                                            <div class="product-review-date">
+                                                                                <img src="assets/images/clock.svg"
+                                                                                    alt="clock">
+                                                                                <p>Dec 19, 2020</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>Lorem ipsum dosectetur adipisicing elit, sed
+                                                                        do.Lorem ipsum dolor sit
+                                                                        amet, consectetur Nulla fringilla purus</p>
+                                                                    <div class="reply-btn mt-15">
+                                                                        <a href="#">Reply <span><img
+                                                                                    src="assets/images/arrow-right.svg"
+                                                                                    alt="arrow-right"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h4>Leave A Reply</h4>
+                                                        <p class="mt-20">Your email address will not be published.
+                                                            Required fields are
+                                                            marked *</p>
+                                                        <!-- Product Comment Form -->
+                                                        <div class="product-comment-form mt-30">
+                                                            <form>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="text" class="form-control"
+                                                                            id="name" name="name" placeholder="Name*">
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <input name="email" id="email" type="email"
+                                                                            class="form-control" placeholder="Email*">
+                                                                    </div>
+                                                                    <div class="form-group col-12">
+                                                                        <input name="website" id="website" type="text"
+                                                                            class="form-control" placeholder="Website*">
+                                                                    </div>
+                                                                    <div class="form-group col-12">
+                                                                        <textarea name="comment" id="comment" rows="2"
+                                                                            class="form-control"
+                                                                            placeholder="message..."
+                                                                            spellcheck="false"></textarea>
+                                                                    </div>
+                                                                    <div class="post-comment-btn">
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary">Submit Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Single product Details section -->
+
+        <!--Start Single Related product section -->
+        <section class="related-product-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="related-product-item">
+                            <div class="product-card-wrapper">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/images/food-dish-1.png" alt="food-dish">
+                                        <div class="card-price">
+                                            <span>$50</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Corn-Shrimp</h5>
+                                        <p class="card-text">Vegetables salad</p>
+                                        <div class="card-icon">
+                                            <a href="#">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="related-product-item">
+                            <div class="product-card-wrapper">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/images/food-dish-2.png" alt="food-dish">
+                                        <div class="card-price">
+                                            <span>$50</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Corn-Shrimp</h5>
+                                        <p class="card-text">Vegetables salad</p>
+                                        <div class="card-icon">
+                                            <a href="#">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="related-product-item">
+                            <div class="product-card-wrapper">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/images/food-dish-3.png" alt="food-dish">
+                                        <div class="card-price">
+                                            <span>$50</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Corn-Shrimp</h5>
+                                        <p class="card-text">Vegetables salad</p>
+                                        <div class="card-icon">
+                                            <a href="#">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="related-product-item">
+                            <div class="product-card-wrapper">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/images/food-dish-4.png" alt="food-dish">
+                                        <div class="card-price">
+                                            <span>$50</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Corn-Shrimp</h5>
+                                        <p class="card-text">Vegetables salad</p>
+                                        <div class="card-icon">
+                                            <a href="#">
+                                                <div class="card-cart-icon">
+                                                    <img src="assets/images/shopping-cart.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="card-heart-icon">
+                                                    <img src="assets/images/heart.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Single Related Details section -->
 
     </main>
 

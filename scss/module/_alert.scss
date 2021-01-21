@@ -1,0 +1,7 @@
+.alert {
+    @include alert;
+}
+
+.alert-primary {
+    background-color: $alert-primary-color;
+}

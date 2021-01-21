@@ -1,5 +1,3 @@
-
-
 label {
     position: relative;
     font-size: 15px;
@@ -7,6 +5,11 @@ label {
     display: block;
     padding-left: 35px;
     cursor: pointer;
+    margin-bottom: 15px !important;
+
+    &:last-child {
+        margin-bottom: 0 !important;
+    }
 
     input {
         display: none;

@@ -1,0 +1,45 @@
+.product-quantity {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    max-width: 100px;
+
+    .input_number {
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 100%;
+
+            &.input_value {
+                border: none;
+                text-align: center;
+                color: $body-font-color;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .input-icon {
+            display: flex;
+            flex-direction: column;
+            background-color: $secondary-color;
+            padding: 5px 7px;
+            border-radius: 7px;
+
+            img {
+                color: $body-background-color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

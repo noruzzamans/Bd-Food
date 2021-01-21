@@ -1,0 +1,157 @@
+.checkout-alert-section {
+    margin-top: 70px;
+
+    .login-alert {
+        .alert {
+            font-size: 17px;
+            font-weight: 500;
+            color: $secondary-color;
+
+            img {
+                margin-right: 10px;
+            }
+
+            a {
+                &.alert-link {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $body-font-color;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.checkout-form-section {
+    margin-bottom: 200px;
+
+    @include respond(tab-port) {
+        margin-bottom: 100px;
+    }
+
+    h4 {
+        margin: 80px 0px 60px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @include respond (tab-port) {
+            margin: 50px;
+        }
+
+        @include respond (tab-port) {
+            margin: 30px;
+        }
+
+    }
+
+    .checkout-form {
+        padding: 50px 50px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05);
+
+        @include respond (phone-large) {
+            padding: 30px 30px 1px;
+        }
+
+        .form-group {
+            .form-control {
+                padding: 15px 20px;
+            }
+        }
+
+        p {
+            margin: 15px 0px 30px;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 300;
+        }
+    }
+
+    .order-details {
+        background-color: $body-background-color;
+        box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.05);
+        padding: 50px 45px;
+        border-radius: 20px;
+
+        @include respond (tab-port) {
+            margin-top: 30px;
+        }
+
+        @include respond(phone-large) {
+            padding: 30px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 0px;
+        }
+
+        table {
+            &.table {
+                color: $heading-color;
+
+                thead {
+                    tr {
+                        th {
+                            border-bottom: none;
+                            border-top: none;
+                            font-size: 18px;
+                            line-height: 22px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        &:last-child {
+                            border-top: 1px solid $body-font-color;
+                        }
+
+                        td {
+                            border-top: none;
+                            font-size: 15px;
+                            font-weight: 300;
+                            line-height: 22px;
+                        }
+
+                        &.total {
+                            td {
+                                font-size: 17px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkout-payment-method {
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin: 50px 0;
+            }
+
+            .checkout-btn {
+                display: inline-block;
+                margin-top: 40px;
+
+                @include respond (phone-large) {
+                    width: 100%;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

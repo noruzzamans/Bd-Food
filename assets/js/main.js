@@ -35,6 +35,7 @@
 
         // In your Javascript (external .js resource or <script> tag)
         $('.select-person').select2();
+        $('.select2').select2();
 
 
         // Initiate datetime picker for pickup date
@@ -156,7 +157,7 @@
 
         //input Number increase decrease
         $('.btn__minus').click(function () {
-            var input = $('.input_number').find('.input_value');
+            var input = $(this).closest('.input_number').find('.input_value');
             var currentVal = parseInt(input.val());
 
             if (currentVal > 0) {
@@ -165,7 +166,7 @@
         });
 
         $('.btn__plus').click(function () {
-            var input = $('.input_number').find('.input_value');
+            var input = $(this).closest('.input_number').find('.input_value');
             var currentVal = parseInt(input.val());
             input.val(++currentVal);
         });

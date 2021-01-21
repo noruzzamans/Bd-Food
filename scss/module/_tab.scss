@@ -1,0 +1,156 @@
+.tabs {
+    .nav {
+        margin-bottom: 50px;
+
+        .nav-item {
+            margin-right: 30px;
+
+            .nav-link {
+                font-size: 24px;
+                line-height: 29px;
+                font-weight: 600;
+                padding: 15px 30px;
+                color: $secondary-color;
+
+                &.active {
+                    background-color: #EFFFED;
+                    border-radius: 50px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        .tab-pane {
+            background-color: #FDFDFE;
+            border-radius: 20px;
+            padding: 65px;
+
+            p {
+                font-size: 15px;
+                font-weight: 300;
+            }
+
+            @include respond (tab-port) {
+                padding: 50px;
+            }
+
+            @include respond (phone-large) {
+                padding: 30px;
+            }
+
+            .product-review {
+                .product-comment-block {
+                    border-radius: 15px;
+                    padding: 65px 45px;
+                    box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.05);
+
+                    @include respond(phone-large) {
+                        padding: 30px 20px;
+                    }
+
+                    h4 {
+                        font-size: 24px;
+                        line-height: 22px;
+                        font-weight: 600;
+                        margin-top: 60px;
+
+                        @include respond(phone-large) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 22px;
+                        font-weight: 300;
+                    }
+
+                    .product-comment-author {
+                        .media {
+                            img {
+                                border-radius: 5px;
+                                margin-right: 20px;
+                            }
+
+                            .media-body {
+                                .review-author-text {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    @include respond (phone-medium) {
+                                        align-items: stretch;
+                                        flex-direction: column;
+                                    }
+
+                                    .review-author {
+                                        h5 {
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                            font-weight: 600;
+                                        }
+
+                                        @include respond (phone-medium) {
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+
+                                    .review-rating {
+                                        ul {
+                                            margin-bottom: 0;
+
+                                            li {
+                                                float: left;
+
+                                                img {
+                                                    margin-right: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .product-meta-item {
+                                    .product-meta {
+                                        .product-review-date {
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+
+                                .reply-btn {
+                                    a {
+                                        color: $primary-color;
+                                        font-size: 15px;
+
+                                        span {
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .product-comment-form {
+                        .product-comment-btn {
+                            align-items: flex-end;
+
+                            @include respond(phone-large) {
+                                display: block;
+                                width: 100%;
+
+                                .btn-primary {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

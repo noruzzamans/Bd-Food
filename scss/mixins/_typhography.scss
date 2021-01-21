@@ -84,3 +84,13 @@
     display: inline-block;
     background-color: $primary-color !important;
 }
+
+//Alert
+@mixin alert {
+    border: none;
+    border-radius: 15px;
+    color: $body-font-color;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
