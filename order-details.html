@@ -151,7 +151,7 @@
                             <nav class="mt-30" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Order Details</li>
                                 </ol>
                             </nav>
                         </div>
@@ -168,16 +168,8 @@
                     <div class="col-12">
                         <div class="login-alert">
                             <div class="alert alert-primary" role="alert">
-                                <img src="assets/images/alert.svg" alt="alert" />
-                                Returning customer?
-                                <a href="#" class="alert-link">Click here to login</a>
-                            </div>
-                        </div>
-                        <div class="login-alert mt-30">
-                            <div class="alert alert-primary" role="alert">
-                                <img src="assets/images/alert.svg" alt="alert" />
-                                Have a coupon?
-                                <a href="#" class="alert-link">Click here to enter your code</a>
+                                <img src="assets/images/check.svg" alt="check" />
+                                Thank You. Your Order Has Been received.
                             </div>
                         </div>
                     </div>
@@ -186,163 +178,69 @@
         </div>
         <!-- Return customer & coupon section -->
 
-        <!-- checkout Form -->
-        <section class="checkout-form-section">
+        <!-- Start Order Details Section -->
+        <section class="order-details-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h4>Billing Details</h4>
+                        <h2>Order Details</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7 col-12">
-                        <!-- Checkout Form -->
-                        <div class="checkout-form">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" id="firstname"
-                                            placeholder="First Name*" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" id="lastname"
-                                            placeholder="Last Name*" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="companyname"
-                                        placeholder="Your Company name*" />
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email*" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" id="phone" placeholder="Your Phone*" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="country"></label>
-                                    <select class="form-control select2" id="country">
-                                        <option>Country*</option>
-                                        <option>USA</option>
-                                        <option>Uk</option>
-                                        <option>Canada</option>
-                                        <option>Bangladesh</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="address" placeholder="Address*" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="city" placeholder="City/Town*" />
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <select class="form-control select2" id="district">
-                                            <option>District*</option>
-                                            <option>Bogura</option>
-                                            <option>Bogura</option>
-                                            <option>Bogura</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" id="Postcode"
-                                            placeholder="Postcode/Zip *" />
-                                    </div>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="check" />
-                                    <label class="form-check-label" for="check">Create an account?</label>
-                                </div>
-                                <p>
-                                    Create an account by entering the information below. If you
-                                    are a returning customer please login at the top of the page.
-                                </p>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="password" class="form-control" id="password"
-                                            placeholder="password*" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="comments" id="comments" rows="2" class="form-control"
-                                        placeholder="Shipping Detail" spellcheck="false"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="comments" id="comments" rows="2" class="form-control"
-                                        placeholder="Additional Information" spellcheck="false"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- Order Details -->
-                    <div class="col-lg-5 col-12">
-                        <div class="order-details">
+                    <div class="col-12 col-md-12">
+                        <div class="order-number">
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Products</th>
-                                            <th scope="col">TOTAL</th>
+                                            <th scope="col">Order Number</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Total</th>
+                                            <th scope="col">Payment</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Sausage Fried Rice</td>
-                                            <td>$45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fried Pork With Garlic</td>
-                                            <td>$45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Shrimp With Rice Noodles</td>
-                                            <td>$45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Subtotal</td>
-                                            <td>$135</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Coupon</td>
-                                            <td>$35</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total</td>
-                                            <td>$100</td>
+                                            <td>EG2818</td>
+                                            <td>December 15, 2020</td>
+                                            <td>$ 100</td>
+                                            <td>Direct Bank Transfer</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="checkout-payment-method">
-                                <h3>Payment Method</h3>
-                                <label class=" form-check-label">Direct Bank Transfer
-                                    <input type="radio" name="cat-name" class="form-check-input"">
-                                    <span class=" checkmark">optional</span>
-                                </label>
-                                <label class=" form-check-label">Check Payment
-                                    <input type="radio" name="cat-name" class="form-check-input"">
-                                    <span class=" checkmark">optional</span>
-                                </label>
-                                <label class=" form-check-label">Cash on Delivery
-                                    <input type="radio" name="cat-name" class="form-check-input"">
-                                    <span class=" checkmark">optional</span>
-                                </label>
-                                <label class=" form-check-label">Paypal
-                                    <input type="radio" name="cat-name" class="form-check-input"">
-                                    <span class=" checkmark">optional</span>
-                                </label>
-                                <div class="checkout-btn">
-                                    <button class="btn btn-primary">Place Order</button>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <div class="product-details">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Gaeng Daeng (Red Curry) × 1</td>
+                                            <td>$100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Subtotal:</td>
+                                            <td>$100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Payment Method:</td>
+                                            <td>Direct Bank Transfer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total:</td>
+                                            <td>$100</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- checkout Form -->
+        <!-- End Order Details Section -->
 
     </main>
 

@@ -1,0 +1,107 @@
+.order-details-section {
+    margin-bottom: 200px;
+
+    @include respond (tab-port) {
+        margin-bottom: 100px;
+    }
+
+    @include respond (phone-large) {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        line-height: 60px;
+        margin: 80px 0;
+
+        @include respond(tab-port) {
+            font-size: 38px;
+            line-height: 44px;
+            margin: 50px 0;
+        }
+
+        @include respond(tab-port) {
+            font-size: 30px;
+            margin: 30px;
+        }
+
+    }
+
+    .order-number {
+        box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.05);
+        padding: 30px 60px;
+        border-radius: 20px;
+
+        @include respond(tab-port) {
+            padding: 18px;
+        }
+
+        .table-responsive {
+            table {
+                &.table {
+                    color: $heading-color;
+                    margin-bottom: 0px;
+
+                    th {
+                        border-bottom: none;
+                        border-top: none;
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+
+                        @include respond(ipad-pro) {
+                            font-size: 18px;
+                        }
+
+                        @include respond(phone-large) {
+                            font-size: 16px;
+                        }
+                    }
+
+                    td {
+                        border-top: none;
+                        font-size: 15px;
+                        font-weight: 300;
+                        vertical-align: middle;
+
+                        &:nth-child(1) {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .product-details {
+        box-shadow: 0px 5px 40px rgba(19, 8, 73, 0.05);
+        padding: 30px 60px;
+        border-radius: 20px;
+        margin-top: 60px;
+
+        @include respond(phone-large) {
+            padding: 18px;
+        }
+
+        table {
+            &.table {
+                color: $heading-color;
+                margin-bottom: 0px;
+
+                th {
+                    border-bottom: none;
+                    border-top: none;
+                }
+
+                td {
+                    border-top: none;
+                    font-size: 15px;
+                    font-weight: 300;
+
+                    &:nth-child(1) {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

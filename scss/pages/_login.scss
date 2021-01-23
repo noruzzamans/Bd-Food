@@ -1,0 +1,77 @@
+.login-form-section {
+    margin-top: 70px;
+    padding-bottom: 200px;
+
+    @include respond (tab-port) {
+        padding-bottom: 100px;
+    }
+
+    @include respond (phone-large) {
+        padding-bottom: 50px;
+    }
+
+    .login-form {
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 29px rgba(19, 8, 73, 0.05);
+
+        @include respond (phone-large) {
+            padding: 30px;
+        }
+
+        h2 {
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: 40px;
+
+            @include respond (phone-large) {
+                font-size: 30px;
+                line-height: 44px;
+            }
+        }
+
+        .form-group {
+            .form-control {
+                padding: 15px 20px;
+            }
+        }
+
+        .form-check-label {
+            margin-bottom: 30px !important;
+        }
+
+        p {
+            margin: 15px 0px 30px;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 300;
+        }
+
+        .login-btn {
+            margin-bottom: 20px;
+
+            @include respond (phone-large) {
+                .btn-primary {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+
+            span {
+                font-size: 15px;
+                font-weight: 300;
+                margin-left: 15px;
+
+                @include respond (phone-medium) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .login-form-footer {
+            a {
+                color: $primary-color;
+            }
+        }
+    }
+}

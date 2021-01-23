@@ -170,6 +170,5 @@
             var currentVal = parseInt(input.val());
             input.val(++currentVal);
         });
-
     })
 })(jQuery);

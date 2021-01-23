@@ -17,8 +17,8 @@
                         text-transform: uppercase;
                         color: $secondary-color;
 
-                        @include respond(ipad-pro) {
-                            font-size: 20px;
+                        @include respond(phone-large) {
+                            font-size: 16px;
                         }
                     }
 
@@ -132,6 +132,10 @@
                     .cart-update {
                         @include respond (phone-large) {
                             margin: 0 auto;
+                            width: 100%;
+                            .btn-primary {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -187,6 +191,12 @@
             .cart-total-btn {
                 text-align: center;
                 padding-top: 40px;
+
+                @include respond(phone-large) {
+                    .btn-primary {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
