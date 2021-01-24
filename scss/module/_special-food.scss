@@ -20,6 +20,11 @@
 
                 .card-img {
                     width: 100%;
+
+                    .card-price {
+                        bottom: calc(10% - 25px);
+                        right: calc(10% - -10px);
+                    }
                 }
 
                 #special-card-img {
@@ -27,7 +32,7 @@
 
                     .card-price {
                         bottom: calc(10% - 25px);
-                        right: calc(10% - -25px);
+                        right: calc(10% - -40px);
                     }
                 }
             }

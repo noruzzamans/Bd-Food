@@ -57,8 +57,19 @@
         }
 
         .form-group {
+            position: relative;
             .form-control {
                 padding: 15px 20px;
+            }
+
+            .country-selector-icon {
+                position: absolute;
+                top: 8px;
+                right: 30px;
+            }
+
+            .district-selector-icon {
+                @extend .country-selector-icon;
             }
         }
 
@@ -148,6 +159,7 @@
                 @include respond (phone-large) {
                     justify-content: center;
                     width: 100%;
+
                     button {
                         width: 100%;
                     }

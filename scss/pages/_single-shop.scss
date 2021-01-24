@@ -141,3 +141,17 @@
         }
     }
 }
+
+.related-product-section {
+    margin-bottom: 80px;
+
+    @include respond (tab-port) {
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+
+    @include respond (phone-large) {
+        margin-bottom: -50px;
+        margin-top: 80px;
+    }
+}

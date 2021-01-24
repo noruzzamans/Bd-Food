@@ -1,0 +1,13 @@
+#scrollUp {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: $primary-color;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    color: $body-background-color;
+    font-size: 22px;
+    border-radius: 50%;
+}

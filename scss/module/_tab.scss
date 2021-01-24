@@ -2,6 +2,10 @@
     .nav {
         margin-bottom: 50px;
 
+        @include respond (phone-large) {
+            margin-bottom: 30px;
+        }
+
         .nav-item {
             margin-right: 30px;
 
@@ -11,6 +15,11 @@
                 font-weight: 600;
                 padding: 15px 30px;
                 color: $secondary-color;
+
+                @include respond (phone-large) {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
 
                 &.active {
                     background-color: #EFFFED;

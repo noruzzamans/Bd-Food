@@ -17,8 +17,8 @@
 
             .booking-person-wrapper-icon {
                 position: absolute;
-                top: 5px;
-                right: 20px;
+                top: 8px;
+                right: 30px;
             }
         }
     }
@@ -27,12 +27,13 @@
         .booking-input-date-wrapper {
             .form-group {
                 input {
-                    padding: 7px 15px;
-                    border-radius: 20px;
-                    border: 0.5px solid #cccfdc;
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: 400;
                     color: $body-font-color;
-                    display: block;
-                    width: 100%;
+                    background-color: #f7f7fa;
 
                     &:focus {
                         outline: none;
@@ -44,12 +45,13 @@
         .booking-input-time-wrapper {
             .form-group {
                 input {
-                    padding: 7px 15px;
-                    border-radius: 20px;
-                    border: 0.5px solid #cccfdc;
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: 400;
                     color: $body-font-color;
-                    display: block;
-                    width: 100%;
+                    background-color: #f7f7fa;
 
                     &:focus {
                         outline: none;
