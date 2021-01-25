@@ -1,0 +1,287 @@
+.menu-breadcrumb-version-two-section {
+    background-image: url(../images/menu-bg-one.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(ipad-pro) {
+        padding: 100px 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 70px 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 40px 0;
+    }
+
+    .breadcrumb-content {
+        @include respond(tab-port) {
+            padding: 0px 50px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+
+        @include respond(phone-large) {
+            padding: 0;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.breakfast-menu-items {
+    margin-bottom: 70px;
+
+    @include respond (phone-large) {
+        margin-bottom: 50px;
+    }
+
+    .menu-item {
+        .menu-item-meta {
+            margin-top: 30px;
+        }
+    }
+}
+
+.lunch-header-wrapper {
+    .lunch-menu-items {
+        margin-bottom: 140px;
+
+        @include respond (tab-port) {
+            margin-bottom: 50px;
+        }
+
+        .menu-items {
+            .menu-item {
+                .menu-item-content {
+                    .menu-item-title {
+                        h4 {
+                            font-size: 30px;
+                            line-height: 37px;
+
+                            @include respond (phone-large) {
+                                font-size: 24px;
+                            }
+                        }
+
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lunch-footer-wrapper {
+    .lunch-menu-items {
+        @include respond (tab-port) {
+            margin-bottom: 70px;
+        }
+
+        @include respond (tab-port) {
+            margin-bottom: 50px;
+        }
+
+        .menu-items {
+            .menu-item {
+                .menu-item-content {
+                    .menu-item-title {
+                        h4 {
+                            font-size: 30px;
+                            line-height: 37px;
+                        }
+
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#menu-booking-section {
+
+    padding: 130px 0px 200px;
+
+    @include respond(tab-port) {
+        padding: 30px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 30px 0 50px;
+    }
+
+}
+
+#menu-newsletters-section {
+    padding: 90px 0 200;
+
+    @include respond(tab-port) {
+        padding: 50px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 0 0 50px;
+    }
+}
+
+.menu-version-two-dinner-wrapper {
+    margin-bottom: 130px;
+
+    @include respond (tab-port) {
+        margin-bottom: 30px;
+    }
+
+    .menu-version-two-dinner-item {
+        margin-bottom: 70px;
+
+        @include respond (phone-large) {
+            margin-bottom: 50px;
+        }
+
+        .menu-version-two-dinner-images {
+            position: relative;
+
+            .menu-version-two-dinner-image {
+                img {
+                    width: 100%;
+                    border-radius: 15px;
+                }
+            }
+
+            .menu-version-two-dinner-dish {
+                width: 165px;
+                height: 125px;
+                border-radius: 15px;
+                background-color: $body-background-color;
+                box-shadow: 0px 5px 40px rgba(171, 178, 204, 0.27);
+                position: absolute;
+                bottom: 0;
+                left: 5px;
+
+                img {
+                    width: 100%;
+                    filter: drop-shadow(0px 6px 22px rgba(19, 8, 73, 0.25));
+                    transform: translateY(-35%);
+                }
+
+                .menu-item-info-text {
+                    span {
+                        background-color: $secondary-color;
+                        color: $body-background-color;
+                        border-radius: 5px 26px 26px 26px;
+                        width: 52px;
+                        height: 52px;
+                        font-size: 17px;
+                        line-height: 27;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 0px;
+
+                        @include respond(phone-medium) {
+                            width: 45px;
+                            height: 45px;
+                            font-size: 17px;
+                            bottom: 10px;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+
+            .menu-version-two-dinner-dish-right {
+                width: 165px;
+                height: 125px;
+                border-radius: 15px;
+                background-color: $body-background-color;
+                box-shadow: 0px 5px 40px rgba(171, 178, 204, 0.27);
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+
+                img {
+                    width: 100%;
+                    filter: drop-shadow(0px 6px 22px rgba(19, 8, 73, 0.25));
+                    transform: translateY(-35%);
+                }
+
+                .menu-item-info-text {
+                    span {
+                        background-color: $secondary-color;
+                        color: $body-background-color;
+                        border-radius: 5px 26px 26px 26px;
+                        width: 52px;
+                        height: 52px;
+                        font-size: 17px;
+                        line-height: 27;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 0px;
+
+                        @include respond(phone-medium) {
+                            width: 45px;
+                            height: 45px;
+                            font-size: 17px;
+                            bottom: 10px;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-version-two-dinner-content {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+
+            .menu-version-two-text {
+                h5 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+
+            span {
+                font-size: 24px;
+                font-weight: 700;
+                color: $primary-color;
+            }
+        }
+
+        .menu-item-meta {
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+    }
+}

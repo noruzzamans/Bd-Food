@@ -42,12 +42,13 @@ label {
         &:after {
             content: "";
             display: block;
-            width: 6px;
-            height: 6px;
-            background: black;
+            width: 10px;
+            height: 10px;
+            background: $primary-color;
+            border-radius: 50%;
             position: absolute;
-            top: 11px;
-            left: 8px;
+            top: 9px;
+            left: 6px;
             visibility: hidden;
         }
     }

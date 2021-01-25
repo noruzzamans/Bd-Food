@@ -26,14 +26,11 @@
     <link rel="stylesheet" href="assets/css/select2.min.css">
 
     <!-- Bootstrap DateRange Picker CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-date-range.css" />
 
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-
-    <!-- Leaflet css -->
-    <link rel="stylesheet" href="assets/css/leaflet.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -70,19 +67,19 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                 <ul>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-one.html">Menu One</a>
+                                        <a href="menu-version-one.html">Menu Version One</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-two.html">Menu Two</a>
+                                        <a href="menu-version-two.html">Menu Version Two</a>
                                     </li>
                                     <li class="dropdown-item">
                                         <a href="booking.html">Booking Table</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="blog-version-one.html">Blog Page one</a>
+                                        <a href="blog-version-one.html">Blog Version one</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="blog-version-two.html">Blog Page Two</a>
+                                        <a href="blog-version-two.html">Blog Version Two</a>
                                     </li>
                                     <li class="dropdown-item">
                                         <a href="single-blog.html">Single Blog Page</a>
@@ -102,27 +99,32 @@
                                     <li class="dropdown-item">
                                         <a href="shop-version-three.html">Shop Version Three</a>
                                     </li>
+                                    <li class="dropdown-item">
+                                        <a href="shop-version-four.html">Shop Version Four</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="single-shop.html">Single Shop</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="cart.html">Cart Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="checkout.html">Checkout Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="register.html">Register Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="login.html">Login Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="order-details.html">Order Details</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Menu
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <ul>
-                                    <li class="dropdown-item">
-                                        <a href="menu-version-one.html">Menu One</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="menu-version-two.html">Menu Two</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="booking.html">Booking Table</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu-version-two.html">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Shop</a>
@@ -143,7 +145,7 @@
     <main>
 
         <!-- Start Shop Breadcrumb section -->
-        <section class="shop-breadcrumb-section">
+        <div class="shop-breadcrumb-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -158,11 +160,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End Shop Breadcrumb section -->
 
         <!-- Start Register Section -->
-        <section class="register-form-section">
+        <div class="register-form-section">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-lg-7 col-12">
@@ -227,10 +229,10 @@
                                             placeholder="Postcode/Zip *" />
                                     </div>
                                 </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="check" />
-                                    <label class="form-check-label" for="check">Create an account?</label>
-                                </div>
+                                <label class="form-check-label">Create an account?
+                                    <input type="radio" name="name" class="form-check-input">
+                                    <span class="checkmark">optional</span>
+                                </label>
                                 <p>
                                     Create an account by entering the information below. If you
                                     are a returning customer please login at the top of the page.
@@ -249,7 +251,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End Register Section -->
 
     </main>
@@ -331,10 +333,10 @@
     <script src="assets/js/select2.min.js"></script>
 
     <!-- Moment JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
 
     <!-- Bootstrap DateRange Picker js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="assets/js/bootstrap-date-range.min.js"></script>
 
     <!-- countup js -->
     <script src="assets/js/waypoints.min.js"></script>
@@ -343,8 +345,8 @@
     <!--  Owl Carousel JS  -->
     <script src="assets/js/owl.carousel.min.js"></script>
 
-    <!-- Leaflet Js -->
-    <script src="assets/js/leaflet.js"></script>
+    <!--  Jquery ScrollUp JS  -->
+    <script src="assets/js/jquery.scrollUp.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>

@@ -1,6 +1,10 @@
 .single-product-section {
     margin-top: 70px;
 
+    @include respond (phone-large) {
+        margin-top: 50px;
+    }
+
     .single-product-content {
         margin-left: 7.33%;
 

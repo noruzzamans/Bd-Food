@@ -11,14 +11,15 @@
 }
 
 .booking-form-section {
-    padding: 200px 0;
+    padding: 85px 0 200px;
 
     @include respond(tab-port) {
-        padding: 100px 0;
+        padding: 0px 0 100px;
+        margin-top: -15px;
     }
 
     @include respond(phone-large) {
-        padding: 50px 0;
+        padding: 0px 0 50px;
     }
 }
 
@@ -42,11 +43,11 @@
     padding: 200px 0;
 
     @include respond(tab-port) {
-        padding: 100px 0;
+        padding: 70px 0 100px;
     }
 
     @include respond(phone-large) {
-        padding: 50px 0;
+        padding: 20px 0 50px;
     }
 }
 
@@ -91,11 +92,11 @@
     padding: 200px 0;
 
     @include respond(tab-port) {
-        padding: 100px 0;
+        padding: 70px 0 100px;
     }
 
     @include respond(phone-large) {
-        padding: 50px 0;
+        padding: 20px 0 50px;
     }
 
     .testimonial-info {
@@ -107,11 +108,13 @@
 
             h2 {
                 font-size: 38px;
+                margin: 5px 0px 50px;
             }
         }
 
         @include respond(phone-large) {
             h2 {
+                margin: 5px 0px 30px;
                 font-size: 30px;
                 line-height: 44px;
             }

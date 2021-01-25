@@ -1,6 +1,10 @@
 .cart-section {
     margin-top: 70px;
 
+    @include respond (phone-large) {
+        margin-top: 50px;
+    }
+
     .cart-item {
         .table-responsive {
             table {
@@ -133,6 +137,7 @@
                         @include respond (phone-large) {
                             margin: 0 auto;
                             width: 100%;
+
                             .btn-primary {
                                 width: 100%;
                             }

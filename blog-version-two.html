@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="assets/css/select2.min.css">
 
     <!-- Bootstrap DateRange Picker CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-date-range.css" />
 
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -54,60 +54,83 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about-us.html">About us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Pages
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                 <ul>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-one.html">Menu One</a>
+                                        <a href="menu-version-one.html">Menu Version One</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-two.html">Menu Two</a>
+                                        <a href="menu-version-two.html">Menu Version Two</a>
                                     </li>
                                     <li class="dropdown-item">
                                         <a href="booking.html">Booking Table</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="blog-version-one.html">Blog Page one</a>
+                                        <a href="blog-version-one.html">Blog Version one</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="blog-version-two.html">Blog Page Two</a>
+                                        <a href="blog-version-two.html">Blog Version Two</a>
                                     </li>
                                     <li class="dropdown-item">
                                         <a href="single-blog.html">Single Blog Page</a>
                                     </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Menu
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <ul>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-one.html">Menu One</a>
+                                        <a href="service.html">Service</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-two.html">Menu Two</a>
+                                        <a href="contact.html">Contact</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="booking.html">Booking Table</a>
+                                        <a href="shop-version-one.html">Shop Version One</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="shop-version-two.html">Shop Version Two</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="shop-version-three.html">Shop Version Three</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="shop-version-four.html">Shop Version Four</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="single-shop.html">Single Shop</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="cart.html">Cart Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="checkout.html">Checkout Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="register.html">Register Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="login.html">Login Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="order-details.html">Order Details</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="menu-version-two.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="fas fa-cart-plus active"></i></a>
                         </li>
                     </ul>
                     <div class="header-btn">
@@ -155,8 +178,8 @@
                         <div class="blog-post-wrapper">
                             <div class="single-blog-item mb-60">
                                 <div class="card">
-                                    <a href="single-blog.html"><img class="card-img-top" src="assets/images/blog-v2-1.png"
-                                            alt="blog-image"></a>
+                                    <a href="single-blog.html"><img class="card-img-top"
+                                            src="assets/images/blog-v2-1.png" alt="blog-image"></a>
                                     <div class="card-body">
                                         <div class="media">
                                             <div class="blog-post-date">
@@ -167,7 +190,7 @@
                                                     <div class="post-meta">
                                                         <div class="post-file">
                                                             <img src="assets/images/file.svg" alt="">
-                                                            <p href="#">New</p>
+                                                            <a href="#">New</a>
                                                         </div>
                                                         <div class="post-date">
                                                             <img src="assets/images/clock.svg" alt="clock">
@@ -188,7 +211,8 @@
                                                     sit amet, consectetur Nulla fringilla purus at leo dignissim congue.
                                                     Mauris elementum accumsan leo vel tempor.
                                                 </p>
-                                                <a href="single-blog.html">Read more <span><img src="assets/images/arrow-right.svg"
+                                                <a href="single-blog.html">Read more <span><img
+                                                            src="assets/images/arrow-right.svg"
                                                             alt="arrow-right"></span></a>
                                             </div>
                                         </div>
@@ -197,8 +221,8 @@
                             </div>
                             <div class="single-blog-item mb-60">
                                 <div class="card">
-                                    <a href="single-blog.html"><img class="card-img-top" src="assets/images/blog-v2-2.png"
-                                            alt="blog-image"></a>
+                                    <a href="single-blog.html"><img class="card-img-top"
+                                            src="assets/images/blog-v2-2.png" alt="blog-image"></a>
                                     <div class="card-body">
                                         <div class="media">
                                             <div class="blog-post-date">
@@ -209,7 +233,7 @@
                                                     <div class="post-meta">
                                                         <div class="post-file">
                                                             <img src="assets/images/file.svg" alt="">
-                                                            <p href="#">New</p>
+                                                            <a href="#">New</a>
                                                         </div>
                                                         <div class="post-date">
                                                             <img src="assets/images/clock.svg" alt="clock">
@@ -230,7 +254,8 @@
                                                     sit amet, consectetur Nulla fringilla purus at leo dignissim congue.
                                                     Mauris elementum accumsan leo vel tempor.
                                                 </p>
-                                                <a href="single-blog.html">Read more <span><img src="assets/images/arrow-right.svg"
+                                                <a href="single-blog.html">Read more <span><img
+                                                            src="assets/images/arrow-right.svg"
                                                             alt="arrow-right"></span></a>
                                             </div>
                                         </div>
@@ -239,8 +264,8 @@
                             </div>
                             <div class="single-blog-item">
                                 <div class="card">
-                                    <a href="single-blog.html"><img class="card-img-top" src="assets/images/blog-v2-3.png"
-                                            alt="blog-image"></a>
+                                    <a href="single-blog.html"><img class="card-img-top"
+                                            src="assets/images/blog-v2-3.png" alt="blog-image"></a>
                                     <div class="card-body">
                                         <div class="media">
                                             <div class="blog-post-date">
@@ -251,7 +276,7 @@
                                                     <div class="post-meta">
                                                         <div class="post-file">
                                                             <img src="assets/images/file.svg" alt="">
-                                                            <p href="#">New</p>
+                                                            <a href="#">New</a>
                                                         </div>
                                                         <div class="post-date">
                                                             <img src="assets/images/clock.svg" alt="clock">
@@ -272,7 +297,8 @@
                                                     sit amet, consectetur Nulla fringilla purus at leo dignissim congue.
                                                     Mauris elementum accumsan leo vel tempor.
                                                 </p>
-                                                <a href="single-blog.html">Read more <span><img src="assets/images/arrow-right.svg"
+                                                <a href="single-blog.html">Read more <span><img
+                                                            src="assets/images/arrow-right.svg"
                                                             alt="arrow-right"></span></a>
                                             </div>
                                         </div>
@@ -535,10 +561,10 @@
     <script src="assets/js/select2.min.js"></script>
 
     <!-- Moment JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
 
     <!-- Bootstrap DateRange Picker js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="assets/js/bootstrap-date-range.min.js"></script>
 
     <!-- countup js -->
     <script src="assets/js/waypoints.min.js"></script>
@@ -546,6 +572,9 @@
 
     <!--  Owl Carousel JS  -->
     <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!--  Jquery ScrollUp JS  -->
+    <script src="assets/js/jquery.scrollUp.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>

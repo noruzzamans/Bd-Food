@@ -5,30 +5,38 @@
     background-position: center center;
     padding: 150px 0 300px;
 
-    @include respond(tab-land) {
-        padding: 50px 0 150px;
+    @include respond(ipad-pro) {
+        padding: 100px 0;
     }
 
     @include respond(tab-port) {
-        h2 {
-            font-size: 38px;
-            line-height: 44px;
-        }
+        padding: 70px 100px;
     }
 
     @include respond(phone-large) {
-        padding: 50px 0;
+        padding: 40px 0;
+    }
 
-        h2 {
-            font-size: 30px;
+    .breadcrumb-content {
+        @include respond(tab-port) {
+            padding: 0px 50px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
         }
 
-        h3 {
-            font-size: 28px;
-        }
+        @include respond(phone-large) {
+            padding: 0;
 
-        p {
-            text-align: justify;
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
         }
     }
 }

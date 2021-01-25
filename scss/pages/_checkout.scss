@@ -1,6 +1,10 @@
 .checkout-alert-section {
     margin-top: 70px;
 
+    @include respond (phone-large) {
+        margin-top: 50px;
+    }
+
     .login-alert {
         .alert {
             font-size: 17px;
@@ -58,6 +62,7 @@
 
         .form-group {
             position: relative;
+
             .form-control {
                 padding: 15px 20px;
             }
@@ -70,6 +75,15 @@
 
             .district-selector-icon {
                 @extend .country-selector-icon;
+            }
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+
+            label {
+                padding-left: 5px;
             }
         }
 

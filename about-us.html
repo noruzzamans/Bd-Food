@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="assets/css/select2.min.css">
 
     <!-- Bootstrap DateRange Picker CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-date-range.css" />
 
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -67,47 +67,70 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                 <ul>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-one.html">Menu One</a>
+                                        <a href="menu-version-one.html">Menu Version One</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-two.html">Menu Two</a>
+                                        <a href="menu-version-two.html">Menu Version Two</a>
                                     </li>
                                     <li class="dropdown-item">
                                         <a href="booking.html">Booking Table</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="blog-version-one.html">Blog Page one</a>
+                                        <a href="blog-version-one.html">Blog Version one</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="blog-version-two.html">Blog Page Two</a>
+                                        <a href="blog-version-two.html">Blog Version Two</a>
                                     </li>
                                     <li class="dropdown-item">
                                         <a href="single-blog.html">Single Blog Page</a>
                                     </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Menu
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <ul>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-one.html">Menu One</a>
+                                        <a href="service.html">Service</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="menu-version-two.html">Menu Two</a>
+                                        <a href="contact.html">Contact</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="booking.html">Booking Table</a>
+                                        <a href="shop-version-one.html">Shop Version One</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="shop-version-two.html">Shop Version Two</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="shop-version-three.html">Shop Version Three</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="shop-version-four.html">Shop Version Four</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="single-shop.html">Single Shop</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="cart.html">Cart Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="checkout.html">Checkout Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="register.html">Register Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="login.html">Login Page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="order-details.html">Order Details</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="menu-version-two.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="fas fa-cart-plus active"></i></a>
                         </li>
                     </ul>
                     <div class="header-btn">
@@ -121,8 +144,33 @@
 
     <main>
 
+        <!-- Start About Us Breadcrumb section -->
+        <section class="about-us-breadcrumb-section">
+            <div class="container">
+                <div class="row justify-content-md-center text-center">
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <div class="breadcrumb-content">
+                            <h3 class="sub-title">About Us</h3>
+                            <h2 class="mt-10 mb-20">About BDfood</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisici, sed do eiusmod tempor incididunt ut
+                                labore
+                                et dolore magna aliqua
+                            </p>
+                            <nav class="mt-30" aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">About us</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Us Breadcrumb section -->
+
         <!-- Start featured section -->
-        <section class="featured-section">
+        <section class="about-us-featured-section">
             <div class="featured-wrapper">
                 <div class="container">
                     <div class="row">
@@ -204,7 +252,7 @@
                                         <img src="assets/images/customer-icon.svg" alt="customer-icon">
                                         <div class="booking-person-wrapper-select-nav">
                                             <div class="form-group">
-                                                <select class="select-person">
+                                                <select id="select-person">
                                                     <option>1 Person</option>
                                                     <option>2 Person</option>
                                                     <option>3 Person</option>
@@ -357,7 +405,7 @@
         <!-- End Team section -->
 
         <!-- Start Newsletter section -->
-        <section class="newsletter-section">
+        <section class="about-us-newsletter-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -380,7 +428,7 @@
                                     <div class="newsletter-form">
                                         <form class="form-inline">
                                             <div class="input-group">
-                                                <input type="email" class="form-control" id="" placeholder="Your email">
+                                                <input type="email" class="form-control" placeholder="Your email">
                                                 <div class="subscribe-btn">
                                                     <button type="submit" class=" btn btn-primary">Subscribe</button>
                                                 </div>
@@ -541,10 +589,10 @@
     <script src="assets/js/select2.min.js"></script>
 
     <!-- Moment JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
 
     <!-- Bootstrap DateRange Picker js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="assets/js/bootstrap-date-range.min.js"></script>
 
     <!-- countup js -->
     <script src="assets/js/waypoints.min.js"></script>
@@ -552,6 +600,9 @@
 
     <!--  Owl Carousel JS  -->
     <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!--  Jquery ScrollUp JS  -->
+    <script src="assets/js/jquery.scrollUp.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>

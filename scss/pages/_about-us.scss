@@ -1,0 +1,70 @@
+.about-us-breadcrumb-section {
+    background-image: url(../images/menu-bg-one.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 220px;
+
+    @include respond(ipad-pro) {
+        padding: 100px 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 70px 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 40px 0;
+    }
+
+    .breadcrumb-content {
+        @include respond(tab-port) {
+            padding: 0px 50px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+
+        @include respond(phone-large) {
+            padding: 0;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.about-us-featured-section {
+    background-image: url(../images/featured-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 200px 0;
+
+    @include respond(tab-port) {
+        padding: 0px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 0px 0 50px;
+    }
+}
+
+.about-us-newsletter-section {
+    padding-top: 200px;
+
+    @include respond(tab-port) {
+        padding-top: 70px;
+    }
+
+    @include respond(phone-large) {
+        padding-top: 20px;
+    }
+}

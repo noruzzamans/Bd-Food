@@ -1,0 +1,149 @@
+.menu-breadcrumb-section {
+    background-image: url(../images/menu-version-one-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(ipad-pro) {
+        padding: 100px 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 70px 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 40px 0;
+    }
+
+    .breadcrumb-content {
+        @include respond(tab-port) {
+            padding: 0px 50px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+
+        @include respond(phone-large) {
+            padding: 0;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.breakfast-section {
+
+    .menu-title {
+        @include respond(tab-port) {
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+
+        @include respond(phone-large) {
+            h2 {
+                font-size: 30px;
+                line-height: 44px;
+            }
+        }
+
+        p {
+
+            @include respond(phone-large) {
+                margin: 20px 0 40px;
+            }
+        }
+    }
+}
+
+#menu-booking-form {
+    padding: 170px 0px 200px;
+
+    @include respond(tab-port) {
+        padding: 70px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 20px 0 50px;
+    }
+}
+
+.lunch-section {
+    @extend .breakfast-section;
+
+    .single-menu-item {
+        .menu-item-price {
+            color: #F54300;
+        }
+
+        .menu-item-content {
+            a {
+                color: #F54300;
+                background-color: #FFF5F2;
+            }
+        }
+    }
+}
+
+.dinner-section {
+    @extend .breakfast-section;
+    padding-top: 170px;
+
+    @include respond(tab-port) {
+        padding-top: 70px;
+    }
+
+    @include respond(phone-large) {
+        padding-top: 20px;
+    }
+}
+
+#menu-newsletter-section {
+    padding: 170px 0px 200px;
+
+    @include respond(tab-port) {
+        padding: 70px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 20px 0 50px;
+    }
+}
+
+.beverage-section {
+    @extend .breakfast-section;
+    padding-bottom: 170px;
+
+    @include respond(tab-port) {
+        padding-bottom: 70px;
+    }
+
+    @include respond(phone-large) {
+        padding-bottom: 20px;
+    }
+
+    .single-menu-item {
+        .menu-item-price {
+            color: #F54300;
+        }
+
+        .menu-item-content {
+            a {
+                color: #F54300;
+                background-color: #FFF5F2;
+            }
+        }
+    }
+}
