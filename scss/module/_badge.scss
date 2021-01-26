@@ -1,0 +1,35 @@
+.badge {
+    @include badge;
+}
+
+.badge-primary {
+    background-color: $badge-primary-color;
+}
+
+.badge-secondary {
+    background-color: $badge-secondary-color;
+}
+
+.badge-success {
+    background-color: $badge-success-color;
+}
+
+.badge-info {
+    background-color: $badge-info-color;
+}
+
+.badge-warning {
+    background-color: $badge-warning-color;
+}
+
+.badge-danger {
+    background-color: $badge-danger-color;
+}
+
+.badge-dark {
+    background-color: $badge-dark-color;
+}
+
+.badge-light {
+    background-color: $badge-light-color;
+}

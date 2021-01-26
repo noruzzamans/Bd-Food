@@ -179,11 +179,15 @@
                             <div class="shop-topbar-left-item">
                                 <div class="product-category-selector">
                                     <div class="form-group">
-                                        <select class="select2">
+                                        <select id="select-category">
                                             <option>Category</option>
-                                            <option>2 Person</option>
-                                            <option>3 Person</option>
-                                            <option>4 Person</option>
+                                            <option>Breakfast</option>
+                                            <option>Dinner</option>
+                                            <option>Lunch</option>
+                                            <option>Restaurant</option>
+                                            <option>Vegetables</option>
+                                            <option>Beverage</option>
+                                            <option>Italian</option>
                                         </select>
                                         <div class="product-category-selector-icon">
                                             <img src="assets/images/angle-down.svg" alt="">
@@ -215,15 +219,15 @@
                             <div class="shop-topbar-right-item">
                                 <!-- Product Search Form -->
                                 <div class="search-form">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search"
-                                            aria-label="search-now" aria-describedby="basic-addon1">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1">
-                                                <img src="assets/images/search.svg" alt="Search Icon">
-                                            </span>
+                                    <form class="form-inline">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder=" ">
+                                            <div class="search-btn">
+                                                <button type="submit" class=" btn btn-secondary"><img
+                                                        src="assets/images/search.svg" alt="Search Icon">Search</button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -370,7 +374,346 @@
                                                         <div class="product-card-wrapper">
                                                             <div class="card">
                                                                 <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
+                                                                    <img src="assets/images/product-v3-1.png"
+                                                                        alt="food-dish">
+                                                                    <div class="card-price">
+                                                                        <span>New</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Salad From Tomatoes</h5>
+                                                                    <p class="card-text">Vegetables salad</p>
+                                                                    <div class="product-rating-price">
+                                                                        <div class="product-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <span>$45</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-icon-btn">
+                                                                        <div class="card-icon">
+                                                                            <a href="#">
+                                                                                <div class="card-cart-icon">
+                                                                                    <img src="assets/images/shopping-cart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <div class="card-heart-icon">
+                                                                                    <img src="assets/images/heart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="card-btn">
+                                                                            <a href="#" class="btn btn-primary">Buy
+                                                                                Now</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="shop-version-three-product-grid-item">
+                                                        <div class="product-card-wrapper">
+                                                            <div class="card">
+                                                                <div class="card-img">
+                                                                    <img src="assets/images/product-v3-2.png"
+                                                                        alt="food-dish">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Pasta With Spices Italian</h5>
+                                                                    <p class="card-text">Vegetables salad</p>
+                                                                    <div class="product-rating-price">
+                                                                        <div class="product-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <span>$45</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-icon-btn">
+                                                                        <div class="card-icon">
+                                                                            <a href="#">
+                                                                                <div class="card-cart-icon">
+                                                                                    <img src="assets/images/shopping-cart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <div class="card-heart-icon">
+                                                                                    <img src="assets/images/heart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="card-btn">
+                                                                            <a href="#" class="btn btn-primary">Buy
+                                                                                Now</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="shop-version-three-product-grid-item">
+                                                        <div class="product-card-wrapper">
+                                                            <div class="card">
+                                                                <div class="card-img">
+                                                                    <img src="assets/images/product-v3-3.png"
+                                                                        alt="food-dish">
+                                                                    <div class="card-price">
+                                                                        <span>New</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Rice Mushrooms Plate</h5>
+                                                                    <p class="card-text">Vegetables salad</p>
+                                                                    <div class="product-rating-price">
+                                                                        <div class="product-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <span>$45</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-icon-btn">
+                                                                        <div class="card-icon">
+                                                                            <a href="#">
+                                                                                <div class="card-cart-icon">
+                                                                                    <img src="assets/images/shopping-cart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <div class="card-heart-icon">
+                                                                                    <img src="assets/images/heart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="card-btn">
+                                                                            <a href="#" class="btn btn-primary">Buy
+                                                                                Now</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="shop-version-three-product-grid-item">
+                                                        <div class="product-card-wrapper">
+                                                            <div class="card">
+                                                                <div class="card-img">
+                                                                    <img src="assets/images/product-v3-4.png"
+                                                                        alt="food-dish">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Penne Past With Meatballs</h5>
+                                                                    <p class="card-text">Vegetables salad</p>
+                                                                    <div class="product-rating-price">
+                                                                        <div class="product-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <span>$45</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-icon-btn">
+                                                                        <div class="card-icon">
+                                                                            <a href="#">
+                                                                                <div class="card-cart-icon">
+                                                                                    <img src="assets/images/shopping-cart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <div class="card-heart-icon">
+                                                                                    <img src="assets/images/heart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="card-btn">
+                                                                            <a href="#" class="btn btn-primary">Buy
+                                                                                Now</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="shop-version-three-product-grid-item">
+                                                        <div class="product-card-wrapper">
+                                                            <div class="card">
+                                                                <div class="card-img">
+                                                                    <img src="assets/images/product-v3-5.png"
+                                                                        alt="food-dish">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Traditional Dumplings</h5>
+                                                                    <p class="card-text">Vegetables salad</p>
+                                                                    <div class="product-rating-price">
+                                                                        <div class="product-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <span>$45</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-icon-btn">
+                                                                        <div class="card-icon">
+                                                                            <a href="#">
+                                                                                <div class="card-cart-icon">
+                                                                                    <img src="assets/images/shopping-cart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <div class="card-heart-icon">
+                                                                                    <img src="assets/images/heart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="card-btn">
+                                                                            <a href="#" class="btn btn-primary">Buy
+                                                                                Now</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="shop-version-three-product-grid-item">
+                                                        <div class="product-card-wrapper">
+                                                            <div class="card">
+                                                                <div class="card-img">
+                                                                    <img src="assets/images/product-v3-3.png"
+                                                                        alt="food-dish">
+                                                                    <div class="card-price">
+                                                                        <span>New</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Traditional Dumplings</h5>
+                                                                    <p class="card-text">Vegetables salad</p>
+                                                                    <div class="product-rating-price">
+                                                                        <div class="product-rating">
+                                                                            <ul class="list-unstyled">
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                                <li><img src="assets/images/five-star.svg"
+                                                                                        alt="reting icon"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <span>$45</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-icon-btn">
+                                                                        <div class="card-icon">
+                                                                            <a href="#">
+                                                                                <div class="card-cart-icon">
+                                                                                    <img src="assets/images/shopping-cart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <div class="card-heart-icon">
+                                                                                    <img src="assets/images/heart.svg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="card-btn">
+                                                                            <a href="#" class="btn btn-primary">Buy
+                                                                                Now</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="shop-version-three-product-grid-item">
+                                                        <div class="product-card-wrapper">
+                                                            <div class="card">
+                                                                <div class="card-img">
+                                                                    <img src="assets/images/product-v3-1.png"
                                                                         alt="food-dish">
                                                                     <div class="card-price">
                                                                         <span>New</span>
@@ -428,343 +771,7 @@
                                                         <div class="product-card-wrapper">
                                                             <div class="card">
                                                                 <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
-                                                                        alt="food-dish">
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">Corn-Shrimp</h5>
-                                                                    <p class="card-text">Vegetables salad</p>
-                                                                    <div class="product-rating-price">
-                                                                        <div class="product-rating">
-                                                                            <ul class="list-unstyled">
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="product-price">
-                                                                            <span>$45</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-card-icon-btn">
-                                                                        <div class="card-icon">
-                                                                            <a href="#">
-                                                                                <div class="card-cart-icon">
-                                                                                    <img src="assets/images/shopping-cart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <div class="card-heart-icon">
-                                                                                    <img src="assets/images/heart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="card-btn">
-                                                                            <a href="#" class="btn btn-primary">Buy
-                                                                                Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="shop-version-three-product-grid-item">
-                                                        <div class="product-card-wrapper">
-                                                            <div class="card">
-                                                                <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
-                                                                        alt="food-dish">
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">Corn-Shrimp</h5>
-                                                                    <p class="card-text">Vegetables salad</p>
-                                                                    <div class="product-rating-price">
-                                                                        <div class="product-rating">
-                                                                            <ul class="list-unstyled">
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="product-price">
-                                                                            <span>$45</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-card-icon-btn">
-                                                                        <div class="card-icon">
-                                                                            <a href="#">
-                                                                                <div class="card-cart-icon">
-                                                                                    <img src="assets/images/shopping-cart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <div class="card-heart-icon">
-                                                                                    <img src="assets/images/heart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="card-btn">
-                                                                            <a href="#" class="btn btn-primary">Buy
-                                                                                Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="shop-version-three-product-grid-item">
-                                                        <div class="product-card-wrapper">
-                                                            <div class="card">
-                                                                <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
-                                                                        alt="food-dish">
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">Corn-Shrimp</h5>
-                                                                    <p class="card-text">Vegetables salad</p>
-                                                                    <div class="product-rating-price">
-                                                                        <div class="product-rating">
-                                                                            <ul class="list-unstyled">
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="product-price">
-                                                                            <span>$45</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-card-icon-btn">
-                                                                        <div class="card-icon">
-                                                                            <a href="#">
-                                                                                <div class="card-cart-icon">
-                                                                                    <img src="assets/images/shopping-cart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <div class="card-heart-icon">
-                                                                                    <img src="assets/images/heart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="card-btn">
-                                                                            <a href="#" class="btn btn-primary">Buy
-                                                                                Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="shop-version-three-product-grid-item">
-                                                        <div class="product-card-wrapper">
-                                                            <div class="card">
-                                                                <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
-                                                                        alt="food-dish">
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">Corn-Shrimp</h5>
-                                                                    <p class="card-text">Vegetables salad</p>
-                                                                    <div class="product-rating-price">
-                                                                        <div class="product-rating">
-                                                                            <ul class="list-unstyled">
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="product-price">
-                                                                            <span>$45</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-card-icon-btn">
-                                                                        <div class="card-icon">
-                                                                            <a href="#">
-                                                                                <div class="card-cart-icon">
-                                                                                    <img src="assets/images/shopping-cart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <div class="card-heart-icon">
-                                                                                    <img src="assets/images/heart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="card-btn">
-                                                                            <a href="#" class="btn btn-primary">Buy
-                                                                                Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="shop-version-three-product-grid-item">
-                                                        <div class="product-card-wrapper">
-                                                            <div class="card">
-                                                                <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
-                                                                        alt="food-dish">
-                                                                    <div class="card-price">
-                                                                        <span>New</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">Corn-Shrimp</h5>
-                                                                    <p class="card-text">Vegetables salad</p>
-                                                                    <div class="product-rating-price">
-                                                                        <div class="product-rating">
-                                                                            <ul class="list-unstyled">
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="product-price">
-                                                                            <span>$45</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-card-icon-btn">
-                                                                        <div class="card-icon">
-                                                                            <a href="#">
-                                                                                <div class="card-cart-icon">
-                                                                                    <img src="assets/images/shopping-cart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <div class="card-heart-icon">
-                                                                                    <img src="assets/images/heart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="card-btn">
-                                                                            <a href="#" class="btn btn-primary">Buy
-                                                                                Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="shop-version-three-product-grid-item">
-                                                        <div class="product-card-wrapper">
-                                                            <div class="card">
-                                                                <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
-                                                                        alt="food-dish">
-                                                                    <div class="card-price">
-                                                                        <span>New</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">Corn-Shrimp</h5>
-                                                                    <p class="card-text">Vegetables salad</p>
-                                                                    <div class="product-rating-price">
-                                                                        <div class="product-rating">
-                                                                            <ul class="list-unstyled">
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                                <li><img src="assets/images/five-star.svg"
-                                                                                        alt="reting icon"></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="product-price">
-                                                                            <span>$45</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="product-card-icon-btn">
-                                                                        <div class="card-icon">
-                                                                            <a href="#">
-                                                                                <div class="card-cart-icon">
-                                                                                    <img src="assets/images/shopping-cart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <div class="card-heart-icon">
-                                                                                    <img src="assets/images/heart.svg"
-                                                                                        alt="">
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="card-btn">
-                                                                            <a href="#" class="btn btn-primary">Buy
-                                                                                Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="shop-version-three-product-grid-item">
-                                                        <div class="product-card-wrapper">
-                                                            <div class="card">
-                                                                <div class="card-img">
-                                                                    <img src="assets/images/food-dish-1.png"
+                                                                    <img src="assets/images/product-v3-2.png"
                                                                         alt="food-dish">
                                                                 </div>
                                                                 <div class="card-body">

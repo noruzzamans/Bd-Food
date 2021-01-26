@@ -1,6 +1,6 @@
 @import "mixins/typhography";
 
-//Button
+//Button Primary
 .btn-primary {
     @include btn;
 
@@ -27,6 +27,7 @@
     }
 }
 
+//Button Secondary
 .btn-secondary {
     @extend .btn-primary;
     background-color: $secondary-color !important;
@@ -54,15 +55,156 @@
     }
 }
 
+//Button Success
+.btn-success {
+    @extend .btn-primary;
+    background-color: $success-color !important;
+
+    &:hover {
+        color: $body-background-color;
+        background-color: $success-color;
+        text-decoration: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $body-background-color;
+        background-color: $success-color;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        color: $body-background-color;
+        background-color: $success-color;
+    }
+}
+
+//Button Info
+.btn-info {
+    @extend .btn-primary;
+    background-color: $info-color !important;
+
+    &:hover {
+        color: $body-background-color;
+        background-color: $info-color;
+        text-decoration: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $body-background-color;
+        background-color: $info-color;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        color: $body-background-color;
+        background-color: $info-color;
+    }
+}
+
+//Button Warning
+.btn-warning {
+    @extend .btn-primary;
+    background-color: $warning-color !important;
+
+    &:hover {
+        color: $body-background-color;
+        background-color: $warning-color;
+        text-decoration: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $body-background-color;
+        background-color: $warning-color;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        color: $body-background-color;
+        background-color: $warning-color;
+    }
+}
+
+//Button Danger
+.btn-danger {
+    @extend .btn-primary;
+    background-color: $danger-color !important;
+
+    &:hover {
+        color: $body-background-color;
+        background-color: $danger-color;
+        text-decoration: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $body-background-color;
+        background-color: $danger-color;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        color: $body-background-color;
+        background-color: $danger-color;
+    }
+}
+
+//Button Dark
+.btn-dark {
+    @extend .btn-primary;
+    background-color: $dark-color !important;
+
+    &:hover {
+        color: $body-background-color;
+        background-color: $dark-color;
+        text-decoration: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $body-background-color;
+        background-color: $dark-color;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        color: $body-background-color;
+        background-color: $dark-color;
+    }
+}
+
+//Button Light
 .btn-light {
     @extend .btn-primary;
     color: $body-font-color;
     font-size: 15px;
-    background-color: $btn-light-color !important;
+    background-color: $light-color !important;
 
     &:hover {
         color: $body-font-color;
-        background-color: $btn-light-color;
+        background-color: $light-color;
         text-decoration: none;
     }
 
@@ -71,7 +213,7 @@
         box-shadow: none;
         outline: none;
         color: $body-font-color;
-        background-color: $btn-light-color;
+        background-color: $light-color;
     }
 
     &:focus {
@@ -79,6 +221,36 @@
         box-shadow: none !important;
         outline: none;
         color: $body-font-color;
-        background-color: $btn-light-color;
+        background-color: $light-color;
+    }
+}
+
+//Button Link
+.btn-link {
+    @extend .btn-primary;
+    color: $link-color;
+    font-size: 15px;
+    background-color: transparent !important;
+
+    &:hover {
+        color: $link-color;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $link-color;
+        background-color: transparent;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        color: $link-color;
+        background-color: transparent;
     }
 }

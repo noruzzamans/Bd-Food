@@ -6,7 +6,7 @@
         .product-category-selector-icon {
             position: absolute;
             top: 5px;
-            right: 10px;
+            right: 15px;
         }
 
         .select2-container--default {
@@ -20,15 +20,15 @@
 
                     &:last-child {
                         border-bottom: none;
-                        border-bottom-left-radius: 10px;
-                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 20px;
+                        border-bottom-right-radius: 20px;
                     }
                 }
             }
 
             .select2-selection--single {
                 background-color: #ffffff;
-                border-radius: 10px !important;
+                border-radius: 20px !important;
                 border: 0.5px solid #cccfdc !important;
                 padding-left: 15px;
                 height: 45px;
@@ -51,14 +51,14 @@
             .select2-dropdown {
                 border: 0.5px solid #cccfdc !important;
                 background-color: #ffffff;
-                margin-top: 0px;
-                border-radius: 10px;
+                margin-top: 35px;
+                border-radius: 20px;
             }
 
             .select2-search--dropdown {
                 background-color: #ffffff;
                 padding: 5px;
-                border-radius: 10px;
+                border-radius: 20px;
 
                 .select2-search__field {
                     background-color: #ffffff;
@@ -74,10 +74,19 @@
 
             .select2-results {
                 background-color: #ffffff;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
                 border-top: 0.5px solid #cccfdc !important;
 
+            }
+
+            .select2-results__option--highlighted[aria-selected] {
+                background-color: #ffffff;
+                color: $heading-color;
+            }
+
+            .select2-results__option--selected {
+                background-color: #ffffff;
             }
         }
     }

@@ -83,7 +83,6 @@
 
         .shop-topbar-right-item {
             .search-form {
-                width: 80%;
                 float: right;
 
                 @include respond(tab-port) {
@@ -102,8 +101,19 @@
                     .shop-version-three-product-grid-section {
                         .shop-version-three-product-grid-item {
                             .product-card-wrapper {
+                                margin-top: 50px;
+
                                 .card {
+                                    .card-img {
+                                        .card-price {
+                                            right: 8px;
+                                            bottom: 5px;
+                                        }
+                                    }
+
                                     .card-body {
+                                        margin-top: -125px;
+
                                         p {
                                             margin: 15px 0 20px;
                                         }

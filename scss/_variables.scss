@@ -6,8 +6,15 @@ $body-font-family: "Muli";
 //Color
 $primary-color: #7DD87D;
 $secondary-color:#130849;
+$success-color: #54CAFF;
+$info-color: #53DEDE;
+$warning-color: #F9D755;
+$danger-color: #F54300;
+$dark-color: #999FB9;
+$light-color: #ECEFF9;
+$link-color: #7DD87D;
 $heading-color: $secondary-color;
-$sub-heading-color: #F54300;
+$sub-heading-color: $danger-color;
 $body-font-color: #999FB9;
 $body-background-color: #ffffff;
 
@@ -23,8 +30,30 @@ $body-text-font-size: 17px;
 //Button color
 $btn-primary-color: $primary-color;
 $btn-secondary-color: $secondary-color;
-$btn-light-color: #ECEFF9;
+$btn-success-color: $success-color;
+$btn-info-color: $info-color;
+$btn-warning-color: $warning-color;
+$btn-danger-color: $danger-color;
+$btn-dark-color: $dark-color;
+$btn-light-color: $light-color;
+$btn-link-color: $link-color;
 
 //alert color
-$alert-primary-color:#EFFFED;
+$alert-primary-color: #CBEFFF;
+$alert-secondary-color: #B7B4C8;
+$alert-success-color: #D8F3D8;
+$alert-info-color: #CBF5F5;
 $alert-warning-color: #FDF3CB;
+$alert-danger-color: #FCC6B2;
+$alert-dark-color: #999FB9;
+$alert-light-color: #ECEFF9;
+
+//badge Color
+$badge-primary-color: $primary-color;
+$badge-secondary-color: $secondary-color;
+$badge-success-color: $success-color;
+$badge-info-color: $info-color;
+$badge-warning-color: $warning-color;
+$badge-danger-color: $danger-color;
+$badge-dark-color: $dark-color;
+$badge-light-color: $light-color;

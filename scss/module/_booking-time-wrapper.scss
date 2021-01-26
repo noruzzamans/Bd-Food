@@ -33,3 +33,37 @@
         }
     }
 }
+
+.daterangepicker {
+    font-family: 'Gilroy';
+    border: 0.5px solid #cccfdc;
+
+    .calendar-table {
+        th {
+            color: $body-font-color;
+        }
+
+        td {
+            color: $body-font-color;
+
+            &.active {
+                color: $body-background-color;
+                background-color: $primary-color;
+
+                &:hover {
+                    color: $body-background-color;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .drp-buttons {
+        border-top: 0.5px solid #cccfdc;
+
+        .btn {
+            padding: 4px 19px;
+            border-radius: 30px;
+        }
+    }
+}

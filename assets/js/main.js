@@ -36,6 +36,7 @@
         // In your Javascript (external .js resource or <script> tag)
         $('.select2').select2();
         $('#select-person').select2();
+        $('#select-category').select2();
 
 
         // Initiate datetime picker for pickup date
