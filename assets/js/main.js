@@ -142,7 +142,7 @@
                 marker.bindPopup("<h3>Adrress:</h3> <p>85 Bay Meadows Drive Woodstock, GA 30188, US </p><h3>Phone:</h3>+37462 7864 3728  ||  +7347 3827 37421");
 
                 L.tileLayer('https://api.mapbox.com/styles/v1/noruzzamanrubel/ckk2a0cal38yc17js3xmhi66z/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoibm9ydXp6YW1hbnJ1YmVsIiwiYSI6ImNrdHR6YWZobjBkNTYyb21yMzhodXZyYnQifQ.JwGGCyyu_eq03wbG61-yvg', {
-                    attribution: 'BDFood &copy; <a href="https://www.openstreetmap.org/copyright"></a>',
+                    attribution: 'Food Ex &copy; <a href="https://www.openstreetmap.org/copyright"></a>',
                     maxZoom: 18,
                     id: 'mapbox/streets-v11',
                     tileSize: 512,

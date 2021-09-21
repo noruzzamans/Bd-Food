@@ -1192,10 +1192,6 @@ p {
         line-height: 44px; }
       .hero-section .hero-text h3 {
         font-size: 30px; } }
-  .hero-section .hero-text .hero-btn .btn-primary, .hero-section .hero-text .hero-btn .btn-secondary, .hero-section .hero-text .hero-btn .btn-success, .hero-section .hero-text .hero-btn .btn-info, .hero-section .hero-text .hero-btn .btn-warning, .hero-section .hero-text .hero-btn .btn-danger, .hero-section .hero-text .hero-btn .btn-dark, .hero-section .hero-text .hero-btn .btn-light, .hero-section .hero-text .hero-btn .btn-link {
-    box-shadow: 0px 15px 22px rgba(125, 216, 125, 0.44); }
-    .hero-section .hero-text .hero-btn .btn-primary:focus, .hero-section .hero-text .hero-btn .btn-secondary:focus, .hero-section .hero-text .hero-btn .btn-success:focus, .hero-section .hero-text .hero-btn .btn-info:focus, .hero-section .hero-text .hero-btn .btn-warning:focus, .hero-section .hero-text .hero-btn .btn-danger:focus, .hero-section .hero-text .hero-btn .btn-dark:focus, .hero-section .hero-text .hero-btn .btn-light:focus, .hero-section .hero-text .hero-btn .btn-link:focus {
-      box-shadow: 0px 15px 22px rgba(125, 216, 125, 0.44) !important; }
   @media only screen and (max-width: 991px) {
     .hero-section .hero-text .hero-btn {
       text-align: center;
@@ -3408,7 +3404,8 @@ p {
   .btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover, .btn-danger:hover, .btn-dark:hover, .btn-light:hover, .btn-link:hover {
     color: #ffffff;
     background-color: #7DD87D;
-    text-decoration: none; }
+    text-decoration: none;
+    box-shadow: 0px 15px 22px rgba(125, 216, 125, 0.44); }
   .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-dark:active, .btn-light:active, .btn-link:active {
     border: none;
     box-shadow: none;

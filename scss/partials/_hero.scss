@@ -32,14 +32,6 @@
         }
 
         .hero-btn {
-            .btn-primary {
-                box-shadow: 0px 15px 22px rgba(125, 216, 125, 0.44);
-
-                &:focus {
-                    box-shadow: 0px 15px 22px rgba(125, 216, 125, 0.44) !important;
-                }
-            }
-
             @include respond(tab-port) {
                 text-align: center;
                 margin: 45px 0;
